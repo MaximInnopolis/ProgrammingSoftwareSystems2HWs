@@ -17,9 +17,6 @@ vector<string> breakSen(const std::string &paragraph){
         if (tmp[0] == ' ') arr_of_sen.emplace_back(++tmp.begin(),tmp.end());
         else arr_of_sen.emplace_back(tmp);
     }
-//    for (auto a:arr_of_sen)
-//        cout << a << endl;
-//    cout << "~~~~~" << endl;
     return arr_of_sen;
 }
 

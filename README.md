@@ -3,7 +3,7 @@
 There are 3 functions in the project:
 breakSen, makeUpper, main
 
-Important thing to mention is that in function main the paths to the files in.txt and out.txt are specified.
+Important thing to mention is that in function **main** the paths to the files in.txt and out.txt are specified.
 
 C:\\Users\\user\\CLionProjects\\PSS2HW1\\out.txt	
 

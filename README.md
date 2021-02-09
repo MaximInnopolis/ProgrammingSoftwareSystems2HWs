@@ -24,3 +24,5 @@ Word **x** matched **n** time(s) in the sentence(s) below:
 
 And so on. However all of this mentioning will be uppercasted because it was not mentioned in the technical task 
 
+At the worst, I zipped my project on Moodle
+

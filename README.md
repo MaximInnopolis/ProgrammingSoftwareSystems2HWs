@@ -12,4 +12,7 @@ C:\\Users\\user\\CLionProjects\\PSS2HW1\\in.txt
 These paths are only suitable for my computer.
 
 For the program to work correctly with them, you will need to specify the path to these files on your personal computer.
+____
+
+Another important thing is that
 

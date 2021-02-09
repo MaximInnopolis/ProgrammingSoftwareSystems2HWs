@@ -22,5 +22,5 @@ Word **x** matched **n** time(s) in the sentence(s) below:
 
 “Sentence”, where matched word 2nd time
 
-And so on. However all of this mentioning will be uppercasted because it was not mentioned in “Òç”
+And so on. However all of this mentioning will be uppercasted because it was not mentioned in the technical task 
 

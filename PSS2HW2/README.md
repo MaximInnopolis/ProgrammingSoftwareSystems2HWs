@@ -30,12 +30,30 @@ In abstract class Room there is function setAccessLevel(AccessLevel accesslevel)
     ClassRoom* pr1 = dynamic_cast<ClassRoom*>(room1);   //Convert pointer to an derived class  
     pr1->setAccessLevel(GREEN);                         //Set access level to GREEN
     
-   
+  After that you can add users in vector like this:
     
+    Innopolis.addStudent({"Maxim"});
+    Innopolis.addLabEmployee({"Oleg"});
+    Innopolis.addProfessor({"Adil"});
+    Innopolis.addAdmin({"Kosha"});
+    Innopolis.addDirector({"Tormasov"});
     
+All users can try to open some room. If you want user to try to open some room you can write like this:
+
+    Innopolis.getUser("Maxim")->tryOpenRoom(Innopolis.getRoom(401));
+    Innopolis.getUser("Tormasov")->tryOpenRoom(Innopolis.getRoom(401));
     
-    
-    
-    
-    
-    
+If you want to use method that is special for him you should first create pointer to an object of base class and after that convert pointer to an derived class like it was showed from above and like this: 
+
+    User* admin1 = Innopolis.getUser("Kosha");
+    Admin* pa = dynamic_cast<Admin*>(admin1);
+
+    User* student1 = Innopolis.getUser("Bobby");
+    Student* ps = dynamic_cast<Student*>(student1);
+
+After that you will be able to call methods like this:
+
+    pa->blockRoom(Innopolis.getRoom(403)); // You called function of user of type admin. He can block room for everyone except admins.
+    ps->spamInChat();                      // You called function of user of type student
+
+

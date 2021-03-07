@@ -23,24 +23,19 @@ int     main() {
 
 
     Room* room1 = Innopolis.getRoom(123);
-    ClassRoom* pr1 = dynamic_cast<ClassRoom*>(room1);
-    pr1->setAccessLevel(GREEN);
+    room1->setAccessLevel(GREEN);
 
     Room* room2 = Innopolis.getRoom(108);
-    LectureRoom* pr2 = dynamic_cast<LectureRoom*>(room2);
-    pr2->setAccessLevel(YELLOW);
+    room2->setAccessLevel(YELLOW);
 
     Room* room3 = Innopolis.getRoom(306);
-    ConferenceRoom* pr3 = dynamic_cast<ConferenceRoom*>(room3);
-    pr3->setAccessLevel(GREEN);
+    room3->setAccessLevel(GREEN);
 
     Room* room4 = Innopolis.getRoom(403);
-    Cabinet* pr4 = dynamic_cast<Cabinet*>(room4);
-    pr4->setAccessLevel(YELLOW);
+    room4->setAccessLevel(YELLOW);
 
     Room* room5 = Innopolis.getRoom(401);
-    DirectorCabinet* pr5 = dynamic_cast<DirectorCabinet*>(room5);
-    pr5->setAccessLevel(RED);
+    room5->setAccessLevel(RED);
 
 
     Innopolis.addStudent({"Maxim"});

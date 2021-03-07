@@ -7,9 +7,6 @@ There is a system which members can communicate to each other. In the main funct
       _____/     ______/   |  |____________  \__________                    |          |   |____________    \______________            
      |          /          |               \            \                   |           \               \_                 \Cabinet
     Admin    Director   DroppedStudent   LabEmployee    Professor        LectureRoom   DirectorCabinet    ConferenceRoom
-<<<<<<< HEAD
->>>>>>> 073e4bd2f0562b1bdfdaa8e6b60753fc83781f4f
-=======
 
 Class University is needed to store pointers to objects of derived classes in vector. There are 2 vectors: first one stores pointer to objects that derive from the abstract class User, and second one stores pointer to objects that derive from the abstract class Room. Also there are methods in class University that can add poinets in vectors and get them.
 

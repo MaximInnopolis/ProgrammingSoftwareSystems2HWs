@@ -109,4 +109,5 @@ int main() {
     User* director = Innopolis.getUser("Tormasov");
     Director* pd = dynamic_cast<Director*>(director);
     pd->sayFunnySentence();
+
 }

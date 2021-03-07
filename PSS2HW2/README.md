@@ -4,8 +4,8 @@ There is a system which members can communicate to each other. In the main funct
 
 ## System description
 
-                                  Abstract class USER <___                                         abstract class ROOM
-                      ___________^  ^  ^  ^  ^_________   \________                                  ^
-               ______/    _________/  _|  |__________  \_______    Student                                                               |
-              |          /           /               \         \
-            Admin   Director    DroppedStudent   LabEmployee    Professor
+                         Abstract class USER <___                                      Abstract class ROOM  <___
+             ___________^  ^  ^  ^  ^_________   \________                    _______^  ^   ^         ^___       \----------ClassRoom
+      ______/    _________/  _|  |__________  \_______    Student          __/          |   |___________  \___________             
+     |          /           /               \         \                   |             |               \_             \Cabinet
+    Admin   Director    DroppedStudent   LabEmployee    Professor        LectureRoom   DirectorCabinet ConferenceRoom

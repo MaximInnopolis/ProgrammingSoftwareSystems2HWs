@@ -9,100 +9,100 @@
 void LabEmployee::tryOpenRoom(Room *R) {
 
     string allow1 = "Access is allowed. Lab employee ";
-    string allow2 = " can enter the room.\n";
+    string allow2 = " can enter room ";
     string den1 = "Access is denied. Lab employee ";
-    string den2 = " can request admins enter this room.\n";
+    string den2 = " can request admins enter room ";
 
 
     if (LectureRoom *lr = dynamic_cast<LectureRoom*>(R)){
         if (access_level >= lr->access_level){
-            cout << allow1 << getName() << allow2 << endl;
+            cout << allow1 << getName() << allow2 << lr->getNumber() << ".\n" << endl;
         } else{
-            cout << den1 << getName() << den2 << endl;
+            cout << den1 << getName() << den2 << lr->getNumber() << ".\n" << endl;
         }
     }
     if (DirectorCabinet *dc = dynamic_cast<DirectorCabinet*>(R)){
         if (access_level >= dc->access_level){
-            cout << allow1 << getName() << allow2 << endl;
+            cout << allow1 << getName() << allow2 << dc->getNumber() << ".\n" << endl;
         } else{
-            cout << den1 << getName() << den2 << endl;
+            cout << den1 << getName() << den2 << dc->getNumber() << ".\n" << endl;
         }
     }
     if (ConferenceRoom *cor = dynamic_cast<ConferenceRoom*>(R)){
         if (access_level >= cor->access_level){
-            cout << allow1 << getName() << allow2 << endl;
+            cout << allow1 << getName() << allow2 << cor->getNumber() << ".\n" << endl;
         } else{
-            cout << den1 << getName() << den2 << endl;
+            cout << den1 << getName() << den2 << cor->getNumber() << ".\n" << endl;
         }
     }
     if (ClassRoom *clr = dynamic_cast<ClassRoom*>(R)){
         if (access_level >= clr->access_level){
-            cout << allow1 << getName() << allow2 << endl;
+            cout << allow1 << getName() << allow2 << clr->getNumber() << ".\n" << endl;
         } else{
-            cout << den1 << getName() << den2 << endl;
+            cout << den1 << getName() << den2 << clr->getNumber() << ".\n" << endl;
         }
     }
     if (Cabinet *c = dynamic_cast<Cabinet*>(R)){
         if (access_level >= c->access_level){
-            cout << allow1 << getName() << allow2 << endl;
+            cout << allow1 << getName() << allow2 << c->getNumber() << ".\n" << endl;
         } else{
-            cout << den1 << getName() << den2 << endl;
+            cout << den1 << getName() << den2 << c->getNumber() << ".\n" << endl;
         }
     }
 }
 
 void LabEmployee::requestEnterRoom(Room* R) {
 
-    string allow1 = "The request was reviewed. Access is allowed. There is no need to request admins enter room of this access level. Lab employee ";
-    string allow2 = " can enter the room.\n";
-    string den1 = "The request was reviewed. Access is denied. Admins can not give permission to enter director cabinet. Lab employee ";
+    string allow1 = "'s was reviewed. Access is allowed. There is no need to request admins enter room of this access level. Lab employee ";
+    string allow2 = " can enter room ";
+    string den1 = "'s request was reviewed. Access is denied. Admins can not give permission to enter director cabinet. Lab employee ";
     string den2 = " can not enter director cabinet.\n";
-    string allow3 = "The request was reviewed. Access is allowed. Lab employee ";
-    string allow4 = " can enter the room.\n";
-    string den3 = "The request was reviewed. Access is denied. This room is blocked therefore lab employee ";
-    string den4 = " can not enter blocked room.\n";
+    string allow3 = "'s request was reviewed. Access is allowed. Lab employee ";
+    string allow4 = " can enter room ";
+    string den3 = "'s request was reviewed. Access is denied. This room is blocked therefore lab employee ";
+    string den4 = " can not enter blocked room ";
 
     if (LectureRoom *lr = dynamic_cast<LectureRoom*>(R)){
         if (access_level >= lr->access_level){
-            cout << allow1 << getName() << allow2 << endl;
+            cout << getName() << allow1 << getName() << allow2 << lr->getNumber() << ".\n" << endl;
         } else if ((access_level < lr->access_level) && (lr->access_level != NO_LEVEL)){
-            cout << allow3 << getName() << allow4 << endl;
+            cout << getName() << allow3 << getName() << allow4 << lr->getNumber() << ".\n" << endl;
         } else if (lr->access_level = NO_LEVEL){
-            cout << den3 << getName() << den4 <<endl;
+            cout << getName() << den3 << getName() << den4 << lr->getNumber() << ".\n" << endl;
         }
     }
     if (DirectorCabinet *dc = dynamic_cast<DirectorCabinet*>(R)){
         if (access_level >= dc->access_level){
-            cout << allow1 << getName() << allow2 << endl;
+            cout << getName() << allow1 << getName() << allow2 << dc->getNumber() << ".\n" << endl;
         } else{
-            cout << den1 << getName() << den2 << endl;
+            cout << getName() << den1 << getName() << den2 << endl;
         }
     }
     if (ConferenceRoom *cor = dynamic_cast<ConferenceRoom*>(R)){
         if (access_level >= cor->access_level){
-            cout << allow1 << getName() << allow2 << endl;
+            cout << getName() << allow1 << getName() << allow2 << cor->getNumber() << ".\n" << endl;
         } else if (cor->access_level = NO_LEVEL){
-            cout << den3 << getName() << den4 <<endl;
+            cout << getName() << den3 << getName() << den4 << cor->getNumber() << ".\n" << endl;
         } else{
-            cout << allow3 << getName() << allow4 << endl;
+            cout << getName() << allow3 << getName() << allow4 << cor->getNumber() << ".\n" << endl;
         }
     }
     if (ClassRoom *clr = dynamic_cast<ClassRoom*>(R)){
         if (access_level >= clr->access_level){
-            cout << allow1 << getName() << allow2 << endl;
+            cout << getName() << allow1 << getName() << allow2 << clr->getNumber() << ".\n" << endl;
         } else if (clr->access_level = NO_LEVEL){
-            cout << den3 << getName() << den4 <<endl;
+            cout << getName() << den3 << getName() << den4 << clr->getNumber() << ".\n" << endl;
         } else{
-            cout << allow3 << getName() << allow4 << endl;
+            cout << getName() << allow3 << getName() << allow4 << clr->getNumber() << ".\n" << endl;
         }
     }
     if (Cabinet *c = dynamic_cast<Cabinet*>(R)){
         if (access_level >= c->access_level){
-            cout << allow1 << getName() << allow2 << endl;
+            cout << getName() << allow1 << getName() << allow2 << c->getNumber() << ".\n" << endl;
         }else if ((access_level < c->access_level) && (c->access_level != NO_LEVEL)){
-            cout << allow3 << getName() << allow4 << endl;
+            cout << getName() << allow3 << getName() << allow4 << c->getNumber() << ".\n" << endl;
         } else if (c->access_level = NO_LEVEL){
-            cout << den3 << getName() << den4 <<endl;
+            cout << getName() << den3 << getName() << den4 << c->getNumber() << ".\n" << endl;
         }
     }
 }

@@ -11,6 +11,7 @@ public:
     void spamInChat();
     void tryOpenRoom(Room* R) override;
     int group;
+    string address;
 };
 
 

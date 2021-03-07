@@ -120,6 +120,7 @@ CMakeFiles/PSS2HW2.dir/main.cpp.obj: ../Room/Header\ files/LectureRoom.h
 CMakeFiles/PSS2HW2.dir/main.cpp.obj: ../Room/Room.h
 CMakeFiles/PSS2HW2.dir/main.cpp.obj: ../University.h
 CMakeFiles/PSS2HW2.dir/main.cpp.obj: ../User/Header\ files/Admin.h
+CMakeFiles/PSS2HW2.dir/main.cpp.obj: ../User/Header\ files/Director.h
 CMakeFiles/PSS2HW2.dir/main.cpp.obj: ../User/Header\ files/DroppedStudent.h
 CMakeFiles/PSS2HW2.dir/main.cpp.obj: ../User/Header\ files/LabEmployee.h
 CMakeFiles/PSS2HW2.dir/main.cpp.obj: ../User/Header\ files/Professor.h

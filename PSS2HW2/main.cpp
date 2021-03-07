@@ -7,6 +7,9 @@
 #include "Room/Header files/DirectorCabinet.h"
 #include "User/Header files/Professor.h"
 #include "User/Header files/DroppedStudent.h"
+#include "User/Header files/Director.h"
+#include "User/Header files/LabEmployee.h"
+#include "User/Header files/Student.h"
 
 int main() {
     University Innopolis;
@@ -102,4 +105,8 @@ int main() {
     User* labemployee1 = Innopolis.getUser("Oleg");
     LabEmployee* ple = dynamic_cast<LabEmployee*>(labemployee1);
     ple->requestEnterRoom(Innopolis.getRoom(403));
+
+    User* director = Innopolis.getUser("Tormasov");
+    Director* pd = dynamic_cast<Director*>(director);
+    pd->sayFunnySentence();
 }

@@ -19,6 +19,9 @@ private:
     string date_of_birth;
     int age;
     AccessLevel access_level;
+    string placeOfResidence;
+    double weight;
+    double height;
 };
 
 

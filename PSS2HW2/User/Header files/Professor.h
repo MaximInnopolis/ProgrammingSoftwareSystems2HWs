@@ -11,6 +11,7 @@ public:
     void tellJoke();
     void tryOpenRoom(Room* R) override;
     AccessLevel access_level = YELLOW;
+    string Institute;
 };
 
 

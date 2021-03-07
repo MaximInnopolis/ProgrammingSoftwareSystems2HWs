@@ -8,6 +8,8 @@
 #include "Room/Header files/ClassRoom.h"
 #include "Room/Header files/Cabinet.h"
 #include "Room/Header files/DirectorCabinet.h"
+#include "User/Header files/Student.h"
+#include "User/Header files/LabEmployee.h"
 
 User *University::getUser(string name) {
     for(auto u: array_of_user)

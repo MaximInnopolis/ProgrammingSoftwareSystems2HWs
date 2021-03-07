@@ -36,35 +36,21 @@ string
 iostream
 -
 
-C:/Users/user/CLionProjects/PSS2HW2/University.h
-Room/Room.h
-C:/Users/user/CLionProjects/PSS2HW2/Room/Room.h
-User/User.h
-C:/Users/user/CLionProjects/PSS2HW2/User/User.h
-User/Header files/Student.h
-C:/Users/user/CLionProjects/PSS2HW2/User/Header files/Student.h
-User/Header files/LabEmployee.h
+C:/Users/user/CLionProjects/PSS2HW2/User/Cpp files/LabEmployee.cpp
+../Header files/LabEmployee.h
 C:/Users/user/CLionProjects/PSS2HW2/User/Header files/LabEmployee.h
-vector
--
-
-C:/Users/user/CLionProjects/PSS2HW2/User/Header files/Admin.h
-../User.h
-C:/Users/user/CLionProjects/PSS2HW2/User/User.h
-
-C:/Users/user/CLionProjects/PSS2HW2/User/Header files/DroppedStudent.h
-../User.h
-C:/Users/user/CLionProjects/PSS2HW2/User/User.h
+../../Room/Header files/LectureRoom.h
+C:/Users/user/CLionProjects/PSS2HW2/Room/Header files/LectureRoom.h
+../../Room/Header files/DirectorCabinet.h
+C:/Users/user/CLionProjects/PSS2HW2/Room/Header files/DirectorCabinet.h
+../../Room/Header files/ConferenceRoom.h
+C:/Users/user/CLionProjects/PSS2HW2/Room/Header files/ConferenceRoom.h
+../../Room/Header files/ClassRoom.h
+C:/Users/user/CLionProjects/PSS2HW2/Room/Header files/ClassRoom.h
+../../Room/Header files/Cabinet.h
+C:/Users/user/CLionProjects/PSS2HW2/Room/Header files/Cabinet.h
 
 C:/Users/user/CLionProjects/PSS2HW2/User/Header files/LabEmployee.h
-../User.h
-C:/Users/user/CLionProjects/PSS2HW2/User/User.h
-
-C:/Users/user/CLionProjects/PSS2HW2/User/Header files/Professor.h
-../User.h
-C:/Users/user/CLionProjects/PSS2HW2/User/User.h
-
-C:/Users/user/CLionProjects/PSS2HW2/User/Header files/Student.h
 ../User.h
 C:/Users/user/CLionProjects/PSS2HW2/User/User.h
 
@@ -77,24 +63,4 @@ iostream
 C:/Users/user/CLionProjects/PSS2HW2/AccessLevel.h
 ../Room/Room.h
 C:/Users/user/CLionProjects/PSS2HW2/Room/Room.h
-
-C:/Users/user/CLionProjects/PSS2HW2/main.cpp
-University.h
-C:/Users/user/CLionProjects/PSS2HW2/University.h
-User/Header files/Admin.h
-C:/Users/user/CLionProjects/PSS2HW2/User/Header files/Admin.h
-Room/Header files/ClassRoom.h
-C:/Users/user/CLionProjects/PSS2HW2/Room/Header files/ClassRoom.h
-Room/Header files/LectureRoom.h
-C:/Users/user/CLionProjects/PSS2HW2/Room/Header files/LectureRoom.h
-Room/Header files/ConferenceRoom.h
-C:/Users/user/CLionProjects/PSS2HW2/Room/Header files/ConferenceRoom.h
-Room/Header files/Cabinet.h
-C:/Users/user/CLionProjects/PSS2HW2/Room/Header files/Cabinet.h
-Room/Header files/DirectorCabinet.h
-C:/Users/user/CLionProjects/PSS2HW2/Room/Header files/DirectorCabinet.h
-User/Header files/Professor.h
-C:/Users/user/CLionProjects/PSS2HW2/User/Header files/Professor.h
-User/Header files/DroppedStudent.h
-C:/Users/user/CLionProjects/PSS2HW2/User/Header files/DroppedStudent.h
 

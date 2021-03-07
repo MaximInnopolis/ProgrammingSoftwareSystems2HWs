@@ -11,6 +11,7 @@ public:
     void tryOpenRoom(Room* R) override;
     AccessLevel access_level = GREEN;
     void requestEnterRoom(Room* R);
+    string Lab;
 };
 
 

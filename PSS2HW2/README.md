@@ -6,6 +6,6 @@ There is a system which members can communicate to each other. In the main funct
 
                      Abstract class USER <______                                     Abstract class ROOM  <______
             _________^  ^  ^  ^  ^___________   \___Student                  _______^  ^   ^         ^______     \----------ClassRoom
-      _____/     ______/   |  |____________  \__________                    |          \   |____________    \______________            
+      _____/     ______/   |  |____________  \__________                    |          |   |____________    \______________            
      |          /          |               \            \                   |           \               \_                 \Cabinet
     Admin    Director   DroppedStudent   LabEmployee    Professor        LectureRoom   DirectorCabinet    ConferenceRoom

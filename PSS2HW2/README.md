@@ -24,9 +24,8 @@ Class University is needed to store pointers to objects of derived classes in ve
  
 In abstract class Room there is function setAccessLevel(AccessLevel accesslevel) which can set Access level to each room. It can be set by those who run this code. You can do it after adding this rooms in vector.You can do it like this:
 
-    Room* room1 = Innopolis.getRoom(123);               //Create pointer to an object of base class 
-    ClassRoom* pr1 = dynamic_cast<ClassRoom*>(room1);   //Convert pointer to an derived class  
-    pr1->setAccessLevel(GREEN);                         //Set access level to GREEN
+    Room* room1 = Innopolis.getRoom(123);
+    pr1->setAccessLevel(GREEN);     
     
   After that you can add users in vector like this:
     

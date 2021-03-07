@@ -1,9 +1,4 @@
 #include "../Header files/Professor.h"
-#include "../../Room/Header files/LectureRoom.h"
-#include "../../Room/Header files/DirectorCabinet.h"
-#include "../../Room/Header files/ConferenceRoom.h"
-#include "../../Room/Header files/ClassRoom.h"
-#include "../../Room/Header files/Cabinet.h"
 
 
 void Professor::tryOpenRoom(Room *R) {

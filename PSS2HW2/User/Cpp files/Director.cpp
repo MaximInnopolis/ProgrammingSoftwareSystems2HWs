@@ -1,9 +1,4 @@
 #include "../Header files/Director.h"
-#include "../../Room/Header files/LectureRoom.h"
-#include "../../Room/Header files/DirectorCabinet.h"
-#include "../../Room/Header files/ConferenceRoom.h"
-#include "../../Room/Header files/ClassRoom.h"
-#include "../../Room/Header files/Cabinet.h"
 #include <ctime>
 #include <map>
 

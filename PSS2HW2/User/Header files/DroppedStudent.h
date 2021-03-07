@@ -8,7 +8,7 @@ class DroppedStudent: public User{
 public:
     DroppedStudent() = default;
     DroppedStudent(const User& user) : User(user) {} // создает объект из базового класса и копирует базовый класс
-    void spamInChat();
+    void cryInChat();
     void tryOpenRoom(Room* R) override;
     int group;
     string address;

@@ -11,7 +11,7 @@
 #include "User/Header files/LabEmployee.h"
 #include "User/Header files/Student.h"
 
-int main() {
+int     main() {
     University Innopolis;
     cout << "Address of University is: " << Innopolis.address << '\n' << endl;
 
@@ -82,7 +82,7 @@ int main() {
     Innopolis.addDroppedStudent({"Sanya"});
 
     Innopolis.getUser("Variann")->tryOpenRoom(Innopolis.getRoom(401));
-    Innopolis.getUser("Tormasov")->tryOpenRoom(Innopolis.getRoom(401));
+    Innopolis.getUser("Tormasov")->tryOpenRoom(Innopolis.getRoom(306));
 
     User* admin1 = Innopolis.getUser("Kosha");
     Admin* pa = dynamic_cast<Admin*>(admin1);
@@ -100,7 +100,7 @@ int main() {
 
     User* droppedstudent1 = Innopolis.getUser("Sanya");
     DroppedStudent* pds = dynamic_cast<DroppedStudent*>(droppedstudent1);
-    pds->spamInChat();
+    pds->cryInChat();
 
     User* labemployee1 = Innopolis.getUser("Oleg");
     LabEmployee* ple = dynamic_cast<LabEmployee*>(labemployee1);

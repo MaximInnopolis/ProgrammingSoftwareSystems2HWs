@@ -11,7 +11,7 @@
 #include "User/Header files/LabEmployee.h"
 #include "User/Header files/Student.h"
 
-int     main() {
+int main() {
     University Innopolis;
     cout << "Address of University is: " << Innopolis.address << '\n' << endl;
 

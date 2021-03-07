@@ -1,5 +1,6 @@
 # Programming-Software-Systems-2-Introduction-to-Programming-2-
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 There are 3 functions in the project:
@@ -29,3 +30,15 @@ And so on. However all of this mentioning will be uppercasted because it was not
 At the worst, I zipped my project on Moodle
 
 >>>>>>> PSSHW2
+=======
+
+There is a system which members can communicate to each other. In the main function there is a possibility to see its usage.
+
+## System description
+
+                     Abstract class USER <______                                     Abstract class ROOM  <______
+            _________^  ^  ^  ^  ^___________   \___Student                  _______^  ^   ^         ^______     \----------ClassRoom
+      _____/     ______/   |  |____________  \__________                    |          |   |____________    \______________            
+     |          /          |               \            \                   |           \               \_                 \Cabinet
+    Admin    Director   DroppedStudent   LabEmployee    Professor        LectureRoom   DirectorCabinet    ConferenceRoom
+>>>>>>> 073e4bd2f0562b1bdfdaa8e6b60753fc83781f4f

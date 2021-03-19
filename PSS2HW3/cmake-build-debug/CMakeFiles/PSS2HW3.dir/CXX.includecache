@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/AccessLevel.h
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Header files/Cabinet.h
+../Room.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Room.h
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Header files/ClassRoom.h
+../Room.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Room.h
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Header files/ConferenceRoom.h
+../Room.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Room.h
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Header files/DirectorCabinet.h
+../Room.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Room.h
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Header files/LectureRoom.h
+../Room.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Room.h
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Room.h
+../AccessLevel.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/AccessLevel.h
+string
+-
+iostream
+-
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/User/User.cpp
+User.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/User/User.h
+../Room/Header files/LectureRoom.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Header files/LectureRoom.h
+../Room/Header files/DirectorCabinet.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Header files/DirectorCabinet.h
+../Room/Header files/ClassRoom.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Header files/ClassRoom.h
+../Room/Header files/Cabinet.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Header files/Cabinet.h
+../Room/Header files/ConferenceRoom.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Header files/ConferenceRoom.h
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/User/User.h
+string
+-
+iostream
+-
+../AccessLevel.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/AccessLevel.h
+../Room/Room.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/Room/Room.h
+

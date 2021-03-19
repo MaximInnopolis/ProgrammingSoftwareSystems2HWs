@@ -1,0 +1,3 @@
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/cmake-build-debug/CMakeFiles/PSS2HW3.dir
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

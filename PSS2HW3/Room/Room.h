@@ -14,11 +14,10 @@ public:
     int getNumber(){return number;}
     virtual ~Room() = default;
     AccessLevel access_level;
+    void setAccessLevel(AccessLevel accesslevel);
 private:
     int number;
     int number_of_seats;
-protected:
-    void setAccessLevel(AccessLevel accesslevel);
 };
 
 

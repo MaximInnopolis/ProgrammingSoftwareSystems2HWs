@@ -80,3 +80,10 @@ void University::addCabinet(const Room& cabinet) {
 void University::addDirectorCabinet(const Room& director_cabinet) {
     array_of_room.push_back( new DirectorCabinet(director_cabinet));
 }
+
+void University::emergencySituation() {
+    for (auto r : array_of_room){
+        r->setAccessLevel(BLUE);
+    }
+    cout << "Attention, emergency situation. Leave the building immediately, using emergency exits." << endl;
+}

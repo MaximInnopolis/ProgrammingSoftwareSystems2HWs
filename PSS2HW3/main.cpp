@@ -22,21 +22,6 @@ int     main() {
     Innopolis.addDirectorCabinet({401});
 
 
-    Room* room1 = Innopolis.getRoom(123);
-    room1->setAccessLevel(GREEN);
-
-    Room* room2 = Innopolis.getRoom(108);
-    room2->setAccessLevel(YELLOW);
-
-    Room* room3 = Innopolis.getRoom(306);
-    room3->setAccessLevel(GREEN);
-
-    Room* room4 = Innopolis.getRoom(403);
-    room4->setAccessLevel(YELLOW);
-
-    Room* room5 = Innopolis.getRoom(401);
-    room5->setAccessLevel(RED);
-
 
     Innopolis.addStudent({"Maxim"});
     Innopolis.addStudent({"Nikita"});

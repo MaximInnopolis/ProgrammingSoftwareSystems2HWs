@@ -7,6 +7,8 @@
 class DirectorCabinet: public Room{
 public:
     DirectorCabinet() = default;
-    DirectorCabinet(const Room& room) : Room(room) {} // создает объект из базового класса и копирует базовый класс
+    DirectorCabinet(const Room& room) : Room(room) {
+        setAccessLevel(RED);
+    } // creates an object from the base class and copies the base class
 };
 #endif //PSS2HW2_DIRECTORCABINET_H

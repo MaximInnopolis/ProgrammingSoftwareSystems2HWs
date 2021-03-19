@@ -7,7 +7,9 @@
 class Cabinet: public Room{
 public:
     Cabinet() = default;
-    Cabinet(const Room& room) : Room(room) {} // создает объект из базового класса и копирует базовый класс
+    Cabinet(const Room& room) : Room(room) {
+        setAccessLevel(YELLOW);
+    } // creates an object from the base class and copies the base class
 };
 
 

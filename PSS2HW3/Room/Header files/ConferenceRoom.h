@@ -7,7 +7,9 @@
 class ConferenceRoom: public Room{
 public:
     ConferenceRoom() = default;
-    ConferenceRoom(const Room& room) : Room(room) {} // создает объект из базового класса и копирует базовый класс
+    ConferenceRoom(const Room& room) : Room(room) {
+        setAccessLevel(BLUE);
+    } // creates an object from the base class and copies the base class
 };
 
 

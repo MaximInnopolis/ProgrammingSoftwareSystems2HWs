@@ -93,7 +93,11 @@ int     main() {
 //    Director* pd = dynamic_cast<Director*>(director);
 //    pd->sayFunnySentence();
 
-    Innopolis.emergencySituation();
+    Innopolis.enableEmergency();
+
+    Innopolis.getUser("Maxim")->tryOpenRoom(Innopolis.getRoom(403));
+
+    Innopolis.cancelEmergency();
 
     Innopolis.getUser("Maxim")->tryOpenRoom(Innopolis.getRoom(403));
 }

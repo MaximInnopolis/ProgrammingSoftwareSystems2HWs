@@ -27,7 +27,8 @@ public:
     User* getUser(string name);
     Room* getRoom(int room);
 
-    void emergencySituation();
+    void enableEmergency();
+    void cancelEmergency();
 private:
     vector<User*> array_of_user;
     vector<Room*> array_of_room;

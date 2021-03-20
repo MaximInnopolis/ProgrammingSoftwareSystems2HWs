@@ -9,6 +9,7 @@ public:
     ConferenceRoom() = default;
     ConferenceRoom(const Room& room) : Room(room) {
         setAccessLevel(BLUE);
+        setFloor();
     } // creates an object from the base class and copies the base class
 };
 

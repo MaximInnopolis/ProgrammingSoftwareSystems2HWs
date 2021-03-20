@@ -17,10 +17,9 @@ int     main() {
 
     Innopolis.addClassRoom({123});
     Innopolis.addLectureRoom({108});
-    Innopolis.addConferenceRoom({106});
+    Innopolis.addConferenceRoom({401});
     Innopolis.addCabinet({403});
     Innopolis.addDirectorCabinet({401});
-
 
 
     Innopolis.addStudent({"Maxim"});
@@ -83,7 +82,7 @@ int     main() {
 //
 //    User* guest1 = Innopolis.getUser("Sanya");
 //    Guest* pg = dynamic_cast<Guest*>(guest1);
-////    pg->cryInChat();
+//
 //
 //    User* labemployee1 = Innopolis.getUser("Oleg");
 //    LabEmployee* ple = dynamic_cast<LabEmployee*>(labemployee1);
@@ -97,7 +96,12 @@ int     main() {
 
     Innopolis.getUser("Maxim")->tryOpenRoom(Innopolis.getRoom(403));
 
+    Innopolis.getUser("Sanya")->tryOpenRoom(Innopolis.getRoom(401));
+
     Innopolis.cancelEmergency();
 
     Innopolis.getUser("Maxim")->tryOpenRoom(Innopolis.getRoom(403));
+
+    Innopolis.getUser("Sanya")->tryOpenRoom(Innopolis.getRoom(401));
+
 }

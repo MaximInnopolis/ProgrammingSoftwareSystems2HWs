@@ -9,6 +9,7 @@ public:
     Cabinet() = default;
     Cabinet(const Room& room) : Room(room) {
         setAccessLevel(YELLOW);
+        setFloor();
     } // creates an object from the base class and copies the base class
 };
 

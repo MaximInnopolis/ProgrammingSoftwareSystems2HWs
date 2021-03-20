@@ -9,6 +9,7 @@ public:
     ClassRoom() = default;
     ClassRoom(const Room& room) : Room(room) {
         setAccessLevel(GREEN);
+        setFloor();
     } // creates an object from the base class and copies the base class
 };
 

@@ -10,12 +10,13 @@ using namespace std;
 
 class Room{
 public:
+    int floor;
     Room(int _number){number = _number;}
     int getNumber(){return number;}
     virtual ~Room() = default;
     AccessLevel access_level;
     void setAccessLevel(AccessLevel accesslevel);
-private:
+    void setFloor();
     int number;
     int number_of_seats;
 };

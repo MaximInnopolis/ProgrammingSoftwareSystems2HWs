@@ -82,13 +82,22 @@ void University::addDirectorCabinet(const Room& director_cabinet) {
 }
 
 void University::enableEmergency(){
+
     for (auto r : array_of_room){
-        r->setAccessLevel(BLUE);
+        r->setAccessLevel(GREEN);
     }
+
+    for (auto u : array_of_user){
+        if (u->access_level == BLUE){
+            u->setAccessLevel(GREEN);
+        }
+    }
+
     cout << "Attention, emergency situation. Leave the building immediately, using emergency exits." << endl;
 }
 
 void University::cancelEmergency() {
+
     for (auto R : array_of_room) {
         if (LectureRoom *lr = dynamic_cast<LectureRoom *>(R)) {
             lr->setAccessLevel(BLUE);
@@ -106,5 +115,13 @@ void University::cancelEmergency() {
             c->setAccessLevel(YELLOW);
         }
     }
-    cout << "No more emergency situation. All members of University can return to their duties." << endl;
+
+    for (auto u : array_of_user){
+        if (u->access_level == GREEN){
+            if (Guest *g = dynamic_cast<Guest*>(u)){
+                g->setAccessLevel(BLUE);
+            }
+        }
+    }
+    cout << "No more emergency situation. All University members can return to their duties." << endl;
 }

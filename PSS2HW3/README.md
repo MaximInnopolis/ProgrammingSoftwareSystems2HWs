@@ -51,4 +51,10 @@ If you want to use method that is special for him you should first create pointe
 After that you will be able to call methods like this:
 
     pa->blockRoom(Innopolis.getRoom(403)); // You called function of user of type admin. He can block room for everyone except admins.
-    ps->spamInChat();                      // You called function of user of type student
+
+There are also implemented 2 new function for class University. First one makes all doors of University opened. The second one cancel emergency situation and restore access level. They can be easily called like this:
+
+    Innopolis.enableEmergency();
+    Innopolis.cancelEmergency();
+    
+Also added new access level (BLUE) and new kind of user (guest). They can only open doors of lecture room and conference room on the 1st floor.     

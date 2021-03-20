@@ -14,7 +14,7 @@ Class University is needed to store pointers to objects of derived classes in ve
 
  CLion was used as the IDE for this project. If you have it, you will be able to open this project through it.
  
-#All code example that is shown below must be written in function main
+##All code example that is shown below must be written in function main.
  
  So, first you want to add all possible type of room in vector. You can do it like this:
  

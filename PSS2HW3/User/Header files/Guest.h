@@ -9,7 +9,7 @@ public:
     Guest() = default;
     Guest(const User& user) : User(user) {
         setAccessLevel(BLUE);
-    } // creates an object from the base class and copies the base class
+    }                                      // creates an object from the base class and copies the base class
     int group;
     string address;
 };

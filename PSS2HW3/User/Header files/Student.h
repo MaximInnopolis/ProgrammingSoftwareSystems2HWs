@@ -9,7 +9,7 @@ class Student: public User{
 public:
     Student() = default;
     Student(const User& user) : User(user) {
-        setAccessLevel(GREEN);
+        setAccessLevel(YELLOW);
     } // creates an object from the base class and copies the base class
     void spamInChat();
     int group;

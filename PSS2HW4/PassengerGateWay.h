@@ -1,0 +1,10 @@
+#ifndef PSS2HW4_PASSENGERGATEWAY_H
+#define PSS2HW4_PASSENGERGATEWAY_H
+
+
+class PassengerGateWay {
+
+};
+
+
+#endif //PSS2HW4_PASSENGERGATEWAY_H

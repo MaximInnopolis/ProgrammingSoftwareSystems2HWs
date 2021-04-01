@@ -93,12 +93,12 @@ clean: CMakeFiles/PSS2HW4.dir/clean
 CMakeFiles/PSS2HW4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target PSS2HW4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target PSS2HW4"
 .PHONY : CMakeFiles/PSS2HW4.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PSS2HW4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/PSS2HW4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PSS2HW4.dir/rule

@@ -1,0 +1,10 @@
+#ifndef PSS2HW4_DRIVERGATEWAY_H
+#define PSS2HW4_DRIVERGATEWAY_H
+
+
+class DriverGateWay {
+
+};
+
+
+#endif //PSS2HW4_DRIVERGATEWAY_H

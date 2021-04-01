@@ -142,6 +142,168 @@ PSS2HW4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/build
 .PHONY : PSS2HW4/fast
 
+Car.obj: Car.cpp.obj
+
+.PHONY : Car.obj
+
+# target to build an object file
+Car.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car.cpp.obj
+.PHONY : Car.cpp.obj
+
+Car.i: Car.cpp.i
+
+.PHONY : Car.i
+
+# target to preprocess a source file
+Car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car.cpp.i
+.PHONY : Car.cpp.i
+
+Car.s: Car.cpp.s
+
+.PHONY : Car.s
+
+# target to generate assembly for a file
+Car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car.cpp.s
+.PHONY : Car.cpp.s
+
+Driver.obj: Driver.cpp.obj
+
+.PHONY : Driver.obj
+
+# target to build an object file
+Driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Driver.cpp.obj
+.PHONY : Driver.cpp.obj
+
+Driver.i: Driver.cpp.i
+
+.PHONY : Driver.i
+
+# target to preprocess a source file
+Driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Driver.cpp.i
+.PHONY : Driver.cpp.i
+
+Driver.s: Driver.cpp.s
+
+.PHONY : Driver.s
+
+# target to generate assembly for a file
+Driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Driver.cpp.s
+.PHONY : Driver.cpp.s
+
+DriverGateWay.obj: DriverGateWay.cpp.obj
+
+.PHONY : DriverGateWay.obj
+
+# target to build an object file
+DriverGateWay.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/DriverGateWay.cpp.obj
+.PHONY : DriverGateWay.cpp.obj
+
+DriverGateWay.i: DriverGateWay.cpp.i
+
+.PHONY : DriverGateWay.i
+
+# target to preprocess a source file
+DriverGateWay.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/DriverGateWay.cpp.i
+.PHONY : DriverGateWay.cpp.i
+
+DriverGateWay.s: DriverGateWay.cpp.s
+
+.PHONY : DriverGateWay.s
+
+# target to generate assembly for a file
+DriverGateWay.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/DriverGateWay.cpp.s
+.PHONY : DriverGateWay.cpp.s
+
+Passenger.obj: Passenger.cpp.obj
+
+.PHONY : Passenger.obj
+
+# target to build an object file
+Passenger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Passenger.cpp.obj
+.PHONY : Passenger.cpp.obj
+
+Passenger.i: Passenger.cpp.i
+
+.PHONY : Passenger.i
+
+# target to preprocess a source file
+Passenger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Passenger.cpp.i
+.PHONY : Passenger.cpp.i
+
+Passenger.s: Passenger.cpp.s
+
+.PHONY : Passenger.s
+
+# target to generate assembly for a file
+Passenger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Passenger.cpp.s
+.PHONY : Passenger.cpp.s
+
+PassengerGateWay.obj: PassengerGateWay.cpp.obj
+
+.PHONY : PassengerGateWay.obj
+
+# target to build an object file
+PassengerGateWay.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/PassengerGateWay.cpp.obj
+.PHONY : PassengerGateWay.cpp.obj
+
+PassengerGateWay.i: PassengerGateWay.cpp.i
+
+.PHONY : PassengerGateWay.i
+
+# target to preprocess a source file
+PassengerGateWay.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/PassengerGateWay.cpp.i
+.PHONY : PassengerGateWay.cpp.i
+
+PassengerGateWay.s: PassengerGateWay.cpp.s
+
+.PHONY : PassengerGateWay.s
+
+# target to generate assembly for a file
+PassengerGateWay.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/PassengerGateWay.cpp.s
+.PHONY : PassengerGateWay.cpp.s
+
+System.obj: System.cpp.obj
+
+.PHONY : System.obj
+
+# target to build an object file
+System.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/System.cpp.obj
+.PHONY : System.cpp.obj
+
+System.i: System.cpp.i
+
+.PHONY : System.i
+
+# target to preprocess a source file
+System.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/System.cpp.i
+.PHONY : System.cpp.i
+
+System.s: System.cpp.s
+
+.PHONY : System.s
+
+# target to generate assembly for a file
+System.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/System.cpp.s
+.PHONY : System.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -178,6 +340,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PSS2HW4
+	@echo ... Car.obj
+	@echo ... Car.i
+	@echo ... Car.s
+	@echo ... Driver.obj
+	@echo ... Driver.i
+	@echo ... Driver.s
+	@echo ... DriverGateWay.obj
+	@echo ... DriverGateWay.i
+	@echo ... DriverGateWay.s
+	@echo ... Passenger.obj
+	@echo ... Passenger.i
+	@echo ... Passenger.s
+	@echo ... PassengerGateWay.obj
+	@echo ... PassengerGateWay.i
+	@echo ... PassengerGateWay.s
+	@echo ... System.obj
+	@echo ... System.i
+	@echo ... System.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

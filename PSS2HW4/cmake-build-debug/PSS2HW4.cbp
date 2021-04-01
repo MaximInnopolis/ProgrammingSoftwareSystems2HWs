@@ -80,6 +80,42 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Driver.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Driver.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/DriverGateWay.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/DriverGateWay.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Passenger.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Passenger.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/PassengerGateWay.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/PassengerGateWay.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/System.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/System.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
 		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/main.cpp">
 			<Option target="PSS2HW4"/>
 		</Unit>

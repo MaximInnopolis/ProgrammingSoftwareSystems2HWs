@@ -2,8 +2,12 @@
 #define PSS2HW4_PASSENGERGATEWAY_H
 
 
-class PassengerGateWay {
+#include "System.h"
 
+class PassengerGateWay: public System{
+public:
+    void passengerLogIn(const Passenger& passenger);
+    Passenger* getPassenger(string name);
 };
 
 

@@ -80,10 +80,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car.cpp">
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/BusinessCar.cpp">
 			<Option target="PSS2HW4"/>
 		</Unit>
-		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car.h">
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/BusinessCar.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/Car.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/Car.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/ComfortCar.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/ComfortCar.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/ComfortPlusCar.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/ComfortPlusCar.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/EconomyCar.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/EconomyCar.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/DataBase.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/DataBase.h">
 			<Option target="PSS2HW4"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Driver.cpp">
@@ -108,6 +138,12 @@
 			<Option target="PSS2HW4"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/PassengerGateWay.h">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Status.cpp">
+			<Option target="PSS2HW4"/>
+		</Unit>
+		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Status.h">
 			<Option target="PSS2HW4"/>
 		</Unit>
 		<Unit filename="C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/System.cpp">

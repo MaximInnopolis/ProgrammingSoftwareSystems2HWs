@@ -154,18 +154,96 @@ CMakeFiles/PSS2HW4.dir/System.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PSS2HW4.dir/System.cpp.s"
 	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\System.cpp -o CMakeFiles\PSS2HW4.dir\System.cpp.s
 
-CMakeFiles/PSS2HW4.dir/Car.cpp.obj: CMakeFiles/PSS2HW4.dir/flags.make
-CMakeFiles/PSS2HW4.dir/Car.cpp.obj: ../Car.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PSS2HW4.dir/Car.cpp.obj"
-	C:\MinGW\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PSS2HW4.dir\Car.cpp.obj -c C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car.cpp
+CMakeFiles/PSS2HW4.dir/Car/Car.cpp.obj: CMakeFiles/PSS2HW4.dir/flags.make
+CMakeFiles/PSS2HW4.dir/Car/Car.cpp.obj: ../Car/Car.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PSS2HW4.dir/Car/Car.cpp.obj"
+	C:\MinGW\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PSS2HW4.dir\Car\Car.cpp.obj -c C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\Car.cpp
 
-CMakeFiles/PSS2HW4.dir/Car.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PSS2HW4.dir/Car.cpp.i"
-	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car.cpp > CMakeFiles\PSS2HW4.dir\Car.cpp.i
+CMakeFiles/PSS2HW4.dir/Car/Car.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PSS2HW4.dir/Car/Car.cpp.i"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\Car.cpp > CMakeFiles\PSS2HW4.dir\Car\Car.cpp.i
 
-CMakeFiles/PSS2HW4.dir/Car.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PSS2HW4.dir/Car.cpp.s"
-	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car.cpp -o CMakeFiles\PSS2HW4.dir\Car.cpp.s
+CMakeFiles/PSS2HW4.dir/Car/Car.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PSS2HW4.dir/Car/Car.cpp.s"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\Car.cpp -o CMakeFiles\PSS2HW4.dir\Car\Car.cpp.s
+
+CMakeFiles/PSS2HW4.dir/Status.cpp.obj: CMakeFiles/PSS2HW4.dir/flags.make
+CMakeFiles/PSS2HW4.dir/Status.cpp.obj: ../Status.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PSS2HW4.dir/Status.cpp.obj"
+	C:\MinGW\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PSS2HW4.dir\Status.cpp.obj -c C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Status.cpp
+
+CMakeFiles/PSS2HW4.dir/Status.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PSS2HW4.dir/Status.cpp.i"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Status.cpp > CMakeFiles\PSS2HW4.dir\Status.cpp.i
+
+CMakeFiles/PSS2HW4.dir/Status.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PSS2HW4.dir/Status.cpp.s"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Status.cpp -o CMakeFiles\PSS2HW4.dir\Status.cpp.s
+
+CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.obj: CMakeFiles/PSS2HW4.dir/flags.make
+CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.obj: ../Car/EconomyCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.obj"
+	C:\MinGW\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PSS2HW4.dir\Car\EconomyCar.cpp.obj -c C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\EconomyCar.cpp
+
+CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.i"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\EconomyCar.cpp > CMakeFiles\PSS2HW4.dir\Car\EconomyCar.cpp.i
+
+CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.s"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\EconomyCar.cpp -o CMakeFiles\PSS2HW4.dir\Car\EconomyCar.cpp.s
+
+CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.obj: CMakeFiles/PSS2HW4.dir/flags.make
+CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.obj: ../Car/ComfortCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.obj"
+	C:\MinGW\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PSS2HW4.dir\Car\ComfortCar.cpp.obj -c C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\ComfortCar.cpp
+
+CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.i"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\ComfortCar.cpp > CMakeFiles\PSS2HW4.dir\Car\ComfortCar.cpp.i
+
+CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.s"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\ComfortCar.cpp -o CMakeFiles\PSS2HW4.dir\Car\ComfortCar.cpp.s
+
+CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.obj: CMakeFiles/PSS2HW4.dir/flags.make
+CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.obj: ../Car/ComfortPlusCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.obj"
+	C:\MinGW\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PSS2HW4.dir\Car\ComfortPlusCar.cpp.obj -c C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\ComfortPlusCar.cpp
+
+CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.i"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\ComfortPlusCar.cpp > CMakeFiles\PSS2HW4.dir\Car\ComfortPlusCar.cpp.i
+
+CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.s"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\ComfortPlusCar.cpp -o CMakeFiles\PSS2HW4.dir\Car\ComfortPlusCar.cpp.s
+
+CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.obj: CMakeFiles/PSS2HW4.dir/flags.make
+CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.obj: ../Car/BusinessCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.obj"
+	C:\MinGW\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PSS2HW4.dir\Car\BusinessCar.cpp.obj -c C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\BusinessCar.cpp
+
+CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.i"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\BusinessCar.cpp > CMakeFiles\PSS2HW4.dir\Car\BusinessCar.cpp.i
+
+CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.s"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\Car\BusinessCar.cpp -o CMakeFiles\PSS2HW4.dir\Car\BusinessCar.cpp.s
+
+CMakeFiles/PSS2HW4.dir/DataBase.cpp.obj: CMakeFiles/PSS2HW4.dir/flags.make
+CMakeFiles/PSS2HW4.dir/DataBase.cpp.obj: ../DataBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PSS2HW4.dir/DataBase.cpp.obj"
+	C:\MinGW\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\PSS2HW4.dir\DataBase.cpp.obj -c C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\DataBase.cpp
+
+CMakeFiles/PSS2HW4.dir/DataBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PSS2HW4.dir/DataBase.cpp.i"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\DataBase.cpp > CMakeFiles\PSS2HW4.dir\DataBase.cpp.i
+
+CMakeFiles/PSS2HW4.dir/DataBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PSS2HW4.dir/DataBase.cpp.s"
+	C:\MinGW\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\DataBase.cpp -o CMakeFiles\PSS2HW4.dir\DataBase.cpp.s
 
 # Object files for target PSS2HW4
 PSS2HW4_OBJECTS = \
@@ -175,7 +253,13 @@ PSS2HW4_OBJECTS = \
 "CMakeFiles/PSS2HW4.dir/PassengerGateWay.cpp.obj" \
 "CMakeFiles/PSS2HW4.dir/DriverGateWay.cpp.obj" \
 "CMakeFiles/PSS2HW4.dir/System.cpp.obj" \
-"CMakeFiles/PSS2HW4.dir/Car.cpp.obj"
+"CMakeFiles/PSS2HW4.dir/Car/Car.cpp.obj" \
+"CMakeFiles/PSS2HW4.dir/Status.cpp.obj" \
+"CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.obj" \
+"CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.obj" \
+"CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.obj" \
+"CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.obj" \
+"CMakeFiles/PSS2HW4.dir/DataBase.cpp.obj"
 
 # External object files for target PSS2HW4
 PSS2HW4_EXTERNAL_OBJECTS =
@@ -186,12 +270,18 @@ PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/Driver.cpp.obj
 PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/PassengerGateWay.cpp.obj
 PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/DriverGateWay.cpp.obj
 PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/System.cpp.obj
-PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/Car.cpp.obj
+PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/Car/Car.cpp.obj
+PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/Status.cpp.obj
+PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.obj
+PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.obj
+PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.obj
+PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.obj
+PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/DataBase.cpp.obj
 PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/build.make
 PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/linklibs.rsp
 PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/objects1.rsp
 PSS2HW4.exe: CMakeFiles/PSS2HW4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable PSS2HW4.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\Documents\GitHub\Programming-Software-Systems-2-Introduction-to-Programming-2-\PSS2HW4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable PSS2HW4.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\PSS2HW4.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

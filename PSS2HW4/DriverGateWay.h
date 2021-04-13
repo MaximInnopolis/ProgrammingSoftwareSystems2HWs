@@ -2,8 +2,12 @@
 #define PSS2HW4_DRIVERGATEWAY_H
 
 
-class DriverGateWay {
+#include "System.h"
 
+class DriverGateWay: public System{
+public:
+    void driverLogIn(const Driver& driver);
+    Driver* getDriver(string name);
 };
 
 

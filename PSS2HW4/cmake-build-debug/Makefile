@@ -142,32 +142,167 @@ PSS2HW4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/build
 .PHONY : PSS2HW4/fast
 
-Car.obj: Car.cpp.obj
+Car/BusinessCar.obj: Car/BusinessCar.cpp.obj
 
-.PHONY : Car.obj
+.PHONY : Car/BusinessCar.obj
 
 # target to build an object file
-Car.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car.cpp.obj
-.PHONY : Car.cpp.obj
+Car/BusinessCar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.obj
+.PHONY : Car/BusinessCar.cpp.obj
 
-Car.i: Car.cpp.i
+Car/BusinessCar.i: Car/BusinessCar.cpp.i
 
-.PHONY : Car.i
+.PHONY : Car/BusinessCar.i
 
 # target to preprocess a source file
-Car.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car.cpp.i
-.PHONY : Car.cpp.i
+Car/BusinessCar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.i
+.PHONY : Car/BusinessCar.cpp.i
 
-Car.s: Car.cpp.s
+Car/BusinessCar.s: Car/BusinessCar.cpp.s
 
-.PHONY : Car.s
+.PHONY : Car/BusinessCar.s
 
 # target to generate assembly for a file
-Car.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car.cpp.s
-.PHONY : Car.cpp.s
+Car/BusinessCar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/BusinessCar.cpp.s
+.PHONY : Car/BusinessCar.cpp.s
+
+Car/Car.obj: Car/Car.cpp.obj
+
+.PHONY : Car/Car.obj
+
+# target to build an object file
+Car/Car.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/Car.cpp.obj
+.PHONY : Car/Car.cpp.obj
+
+Car/Car.i: Car/Car.cpp.i
+
+.PHONY : Car/Car.i
+
+# target to preprocess a source file
+Car/Car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/Car.cpp.i
+.PHONY : Car/Car.cpp.i
+
+Car/Car.s: Car/Car.cpp.s
+
+.PHONY : Car/Car.s
+
+# target to generate assembly for a file
+Car/Car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/Car.cpp.s
+.PHONY : Car/Car.cpp.s
+
+Car/ComfortCar.obj: Car/ComfortCar.cpp.obj
+
+.PHONY : Car/ComfortCar.obj
+
+# target to build an object file
+Car/ComfortCar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.obj
+.PHONY : Car/ComfortCar.cpp.obj
+
+Car/ComfortCar.i: Car/ComfortCar.cpp.i
+
+.PHONY : Car/ComfortCar.i
+
+# target to preprocess a source file
+Car/ComfortCar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.i
+.PHONY : Car/ComfortCar.cpp.i
+
+Car/ComfortCar.s: Car/ComfortCar.cpp.s
+
+.PHONY : Car/ComfortCar.s
+
+# target to generate assembly for a file
+Car/ComfortCar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/ComfortCar.cpp.s
+.PHONY : Car/ComfortCar.cpp.s
+
+Car/ComfortPlusCar.obj: Car/ComfortPlusCar.cpp.obj
+
+.PHONY : Car/ComfortPlusCar.obj
+
+# target to build an object file
+Car/ComfortPlusCar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.obj
+.PHONY : Car/ComfortPlusCar.cpp.obj
+
+Car/ComfortPlusCar.i: Car/ComfortPlusCar.cpp.i
+
+.PHONY : Car/ComfortPlusCar.i
+
+# target to preprocess a source file
+Car/ComfortPlusCar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.i
+.PHONY : Car/ComfortPlusCar.cpp.i
+
+Car/ComfortPlusCar.s: Car/ComfortPlusCar.cpp.s
+
+.PHONY : Car/ComfortPlusCar.s
+
+# target to generate assembly for a file
+Car/ComfortPlusCar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/ComfortPlusCar.cpp.s
+.PHONY : Car/ComfortPlusCar.cpp.s
+
+Car/EconomyCar.obj: Car/EconomyCar.cpp.obj
+
+.PHONY : Car/EconomyCar.obj
+
+# target to build an object file
+Car/EconomyCar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.obj
+.PHONY : Car/EconomyCar.cpp.obj
+
+Car/EconomyCar.i: Car/EconomyCar.cpp.i
+
+.PHONY : Car/EconomyCar.i
+
+# target to preprocess a source file
+Car/EconomyCar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.i
+.PHONY : Car/EconomyCar.cpp.i
+
+Car/EconomyCar.s: Car/EconomyCar.cpp.s
+
+.PHONY : Car/EconomyCar.s
+
+# target to generate assembly for a file
+Car/EconomyCar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.s
+.PHONY : Car/EconomyCar.cpp.s
+
+DataBase.obj: DataBase.cpp.obj
+
+.PHONY : DataBase.obj
+
+# target to build an object file
+DataBase.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/DataBase.cpp.obj
+.PHONY : DataBase.cpp.obj
+
+DataBase.i: DataBase.cpp.i
+
+.PHONY : DataBase.i
+
+# target to preprocess a source file
+DataBase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/DataBase.cpp.i
+.PHONY : DataBase.cpp.i
+
+DataBase.s: DataBase.cpp.s
+
+.PHONY : DataBase.s
+
+# target to generate assembly for a file
+DataBase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/DataBase.cpp.s
+.PHONY : DataBase.cpp.s
 
 Driver.obj: Driver.cpp.obj
 
@@ -277,6 +412,33 @@ PassengerGateWay.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/PassengerGateWay.cpp.s
 .PHONY : PassengerGateWay.cpp.s
 
+Status.obj: Status.cpp.obj
+
+.PHONY : Status.obj
+
+# target to build an object file
+Status.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Status.cpp.obj
+.PHONY : Status.cpp.obj
+
+Status.i: Status.cpp.i
+
+.PHONY : Status.i
+
+# target to preprocess a source file
+Status.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Status.cpp.i
+.PHONY : Status.cpp.i
+
+Status.s: Status.cpp.s
+
+.PHONY : Status.s
+
+# target to generate assembly for a file
+Status.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PSS2HW4.dir\build.make CMakeFiles/PSS2HW4.dir/Status.cpp.s
+.PHONY : Status.cpp.s
+
 System.obj: System.cpp.obj
 
 .PHONY : System.obj
@@ -340,9 +502,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PSS2HW4
-	@echo ... Car.obj
-	@echo ... Car.i
-	@echo ... Car.s
+	@echo ... Car/BusinessCar.obj
+	@echo ... Car/BusinessCar.i
+	@echo ... Car/BusinessCar.s
+	@echo ... Car/Car.obj
+	@echo ... Car/Car.i
+	@echo ... Car/Car.s
+	@echo ... Car/ComfortCar.obj
+	@echo ... Car/ComfortCar.i
+	@echo ... Car/ComfortCar.s
+	@echo ... Car/ComfortPlusCar.obj
+	@echo ... Car/ComfortPlusCar.i
+	@echo ... Car/ComfortPlusCar.s
+	@echo ... Car/EconomyCar.obj
+	@echo ... Car/EconomyCar.i
+	@echo ... Car/EconomyCar.s
+	@echo ... DataBase.obj
+	@echo ... DataBase.i
+	@echo ... DataBase.s
 	@echo ... Driver.obj
 	@echo ... Driver.i
 	@echo ... Driver.s
@@ -355,6 +532,9 @@ help:
 	@echo ... PassengerGateWay.obj
 	@echo ... PassengerGateWay.i
 	@echo ... PassengerGateWay.s
+	@echo ... Status.obj
+	@echo ... Status.i
+	@echo ... Status.s
 	@echo ... System.obj
 	@echo ... System.i
 	@echo ... System.s

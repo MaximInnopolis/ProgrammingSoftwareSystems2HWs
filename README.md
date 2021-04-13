@@ -40,4 +40,10 @@ If you want to use method that is special for him you should write like it is sh
     passengerGateWay.getPassenger({"Maxim"})->addPinnedAddresses("Universitetskay");
     passengerGateWay.getPassenger({"Maxim"})->addPinnedAddresses("Ploshad");
 
-I tried to show every method that was required so it should not be complicated      
+I tried to show every method that was required so it should not be complicated
+
+Below you can see my UML diagram
+
+
+![image](https://user-images.githubusercontent.com/71584246/114623509-09f68b00-9cb8-11eb-99dd-f5f25fedc192.png)
+

@@ -2,7 +2,7 @@
 
 void Passenger::seePaymentMethods() {
     for (string pm: payment_methods){
-        cout << pm << endl;
+        cout << pm << "\n" << endl;
     }
 }
 
@@ -20,7 +20,7 @@ void Passenger::deletePaymentMethod(string payment_method) {
 
 void Passenger::seePinnedAddresses() {
     for (string pa: pinned_addresses){
-        cout << pa << endl;
+        cout << pa << "\n" << endl;
     }
 }
 
@@ -38,7 +38,7 @@ void Passenger::deletePinnedAddresses(string pinned_address) {
 
 void Passenger::seeOrderHistory() {
     for (string oh: order_history){
-        cout << oh << endl;
+        cout << oh << "\n" << endl;
     }
 }
 
@@ -56,12 +56,12 @@ void Passenger::selectAddressTo() {
 
 void Passenger::selectCarType() {
     string tmp;
-    cout << "Enter one of the following car type: Economy, ComfortPlus, Comfort, Business" << endl;
+    cout << "Enter one of the following car type: Economy, ComfortPlus, Comfort, Business" << "\n" << endl;
     cin >> tmp;
     if ((tmp == "Economy") || (tmp == "ComfortPlus") || (tmp == "Comfort") || (tmp == "Business")){
         carType = tmp;
     } else {
-        cout << "Entered car type does not exist. He/she could enter one of the car types above" << endl;
+        cout << "Entered car type does not exist. He/she could enter one of the car types above" << "\n" << endl;
     }
 }
 
@@ -77,11 +77,11 @@ void Passenger::checkTime() {
             time_of_trip = 25 + rand() % 10;
         }
         if (carType == "Business") {
-            time_of_trip = 1 + rand() % 10;
+            time_of_trip = 15 + rand() % 10;
         }
-        cout << "Expected time for trip is: " << time_of_trip << " minutes" << endl;
+        cout << "Expected time for trip is: " << time_of_trip << " minutes" << "\n" << endl;
     } else {
-        cout << "First he/she should select car type, addresses of destination and departure" << endl;
+        cout << "First he/she should select car type, addresses of destination and departure" << "\n" << endl;
     }
 }
 
@@ -99,9 +99,9 @@ void Passenger::checkPrice() {
         if (carType == "Business") {
             price = 250 + rand() % 50;
         }
-        cout << "This trip cost " << price << " rubles" << endl;
+        cout << "This trip cost " << price << " rubles" <<"\n" << endl;
     } else {
-        cout << "To check price he/she should select car type, addresses of destination and departure" << endl;
+        cout << "To check price he/she should select car type, addresses of destination and departure" << "\n" << endl;
     }
 }
 
@@ -112,9 +112,9 @@ void Passenger::choosePaymentMethod(string _payment_method) {
         }
     }
     if (payment_method != _payment_method){
-        cout << "This payment method is not in his/her list of payment methods, he/she could add it to the list" << endl;
+        cout << "This payment method is not in his/her list of payment methods, he/she could add it to the list" << "\n" << endl;
     } else {
-        cout << "You successfully chose payment method" << endl;
+        cout << "You successfully chose payment method" << "\n" << endl;
     }
 }
 
@@ -123,11 +123,11 @@ void Passenger::orderRide(DataBase* order) {
         checkTime();
     }
     if ((addressFrom != "") && (addressTo != "")){
-        cout << name <<" have ordered the ride from " << addressFrom << " to " << addressTo << endl;
+        cout << name <<" have ordered the ride from " << addressFrom << " to " << addressTo << "\n" << endl;
         order->from.push_back(addressFrom);
         order->to.push_back(addressTo);
         order->time.push_back(time_of_trip);
-        order_history.push_back("Trip from " + addressFrom + " to " + addressTo + ". Its time is " + to_string(time_of_trip));
+        order_history.push_back("Trip from " + addressFrom + " to " + addressTo + ". Its time is " + to_string(time_of_trip) + " minutes");
         addressFrom = "";
         addressTo = "";
         time_of_trip = 0;
@@ -151,7 +151,7 @@ void Passenger::checkLength() {
         if (carType == "Business") {
             length_of_trip = 50 * time_of_trip/60;
         }
-        cout << "The length of trip is: " << length_of_trip << " kilometres" << endl;
+        cout << "The length of trip is: " << length_of_trip << " kilometres" << "\n" << endl;
     } else {
         cout << "First he/she should check time of the trip, select car type, addresses of destination and departure" << endl;
     }

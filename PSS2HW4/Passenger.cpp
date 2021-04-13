@@ -128,5 +128,31 @@ void Passenger::orderRide(DataBase* order) {
         order->to.push_back(addressTo);
         order->time.push_back(time_of_trip);
         order_history.push_back("Trip from " + addressFrom + " to " + addressTo + ". Its time is " + to_string(time_of_trip));
+        addressFrom = "";
+        addressTo = "";
+        time_of_trip = 0;
+        length_of_trip = 0;
+        price = 0;
+        carType = "";
+    }
+}
+
+void Passenger::checkLength() {
+    if ((carType != "") && (addressTo != "") && (addressFrom != "") && (time_of_trip != 0)) {
+        if (carType == "Comfort") {
+            length_of_trip = 30 * time_of_trip/60;
+        }
+        if (carType == "Economy") {
+            length_of_trip = 35 * time_of_trip/60;
+        }
+        if (carType == "ComfortPlus"){
+            length_of_trip = 45 * time_of_trip/60;
+        }
+        if (carType == "Business") {
+            length_of_trip = 50 * time_of_trip/60;
+        }
+        cout << "The length of trip is: " << length_of_trip << " kilometres" << endl;
+    } else {
+        cout << "First he/she should check time of the trip, select car type, addresses of destination and departure" << endl;
     }
 }

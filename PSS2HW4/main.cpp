@@ -47,12 +47,12 @@ int main() {
     passengerGateWay.getPassenger({"Maxim"})->selectCarType();
     passengerGateWay.getPassenger({"Maxim"})->checkTime();
     passengerGateWay.getPassenger({"Maxim"})->checkPrice();
+    passengerGateWay.getPassenger({"Maxim"})->checkLength();
     passengerGateWay.getPassenger({"Maxim"})->orderRide(ptrDatabase);
 
     cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~" <<endl;
     driverGateWay.getDriver({"Leonid"})->checkAvailableOrders(ptrDatabase);
     driverGateWay.getDriver({"Leonid"})->acceptFirstOrder(ptrDatabase);
-    cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~" <<endl;
 
     return 0;
 }

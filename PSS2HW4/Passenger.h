@@ -37,6 +37,8 @@ public:
 
     int time_of_trip;
     void checkTime();
+    int length_of_trip;
+    void checkLength();
     int price;
     void checkPrice();
 

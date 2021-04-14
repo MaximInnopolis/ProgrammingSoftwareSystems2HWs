@@ -40,7 +40,7 @@ int main() {
     passengerGateWay.passengerLogIn({"Maxim"});
     driverGateWay.driverLogIn({"Leonid"});
 
-    driverGateWay.getDriver({"Leonid"})->takeEconomyCar(economyCar1);
+    driverGateWay.getDriver({"Leonid"})->takeComfortCar(comfortCar1);
 
     passengerGateWay.getPassenger({"Maxim"})->selectAddressFrom();
     passengerGateWay.getPassenger({"Maxim"})->selectAddressTo();
@@ -55,33 +55,19 @@ int main() {
     passengerGateWay.getPassenger({"Maxim"})->addPinnedAddresses("Ploshad");
 
 
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressFrom();
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressTo();
-    passengerGateWay.getPassenger({"Maxim"})->selectCarType();
-    passengerGateWay.getPassenger({"Maxim"})->orderRide(ptrDatabase);
-
-
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressFrom();
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressTo();
-    passengerGateWay.getPassenger({"Maxim"})->selectCarType();
-    passengerGateWay.getPassenger({"Maxim"})->orderRide(ptrDatabase);
-
-
-    passengerGateWay.getPassenger({"Maxim"})->seeOrderHistory();
-
     cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 
-    driverGateWay.getDriver({"Leonid"})->takeEconomyCar(businessCar1);
-    driverGateWay.getDriver({"Leonid"})->checkAvailableOrders(ptrDatabase);
-    driverGateWay.getDriver({"Leonid"})->acceptFirstOrder(ptrDatabase);
 
     driverGateWay.getDriver({"Leonid"})->checkAvailableOrders(ptrDatabase);
-    driverGateWay.getDriver({"Leonid"})->acceptFirstOrder(ptrDatabase);
+    driverGateWay.getDriver({"Leonid"})->acceptOrder(ptrDatabase);
+
+
+    passengerGateWay.getPassenger({"Maxim"})->selectAddressFrom();
+    passengerGateWay.getPassenger({"Maxim"})->selectAddressTo();
+    passengerGateWay.getPassenger({"Maxim"})->selectCarType();
 
     driverGateWay.getDriver({"Leonid"})->checkAvailableOrders(ptrDatabase);
-    driverGateWay.getDriver({"Leonid"})->acceptFirstOrder(ptrDatabase);
-
-    driverGateWay.getDriver({"Leonid"})->seeOrderHistory();
+    driverGateWay.getDriver({"Leonid"})->acceptOrder(ptrDatabase);
 
     return 0;
 }

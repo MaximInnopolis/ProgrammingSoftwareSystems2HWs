@@ -1,3 +1,3 @@
-"C:\Program Files\JetBrains\CLion 2020.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\PSS2HW3.dir/objects.a
+"C:\Program Files\CLion 2020.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\PSS2HW3.dir/objects.a
 C:\MinGW\mingw64\bin\ar.exe cr CMakeFiles\PSS2HW3.dir/objects.a @CMakeFiles\PSS2HW3.dir\objects1.rsp
 C:\MinGW\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\PSS2HW3.dir/objects.a -Wl,--no-whole-archive  -o PSS2HW3.exe -Wl,--out-implib,libPSS2HW3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\PSS2HW3.dir\linklibs.rsp

@@ -34,7 +34,7 @@ public:
 
     DataBase* dataBase;
     void checkAvailableOrders(DataBase* order);
-    void acceptFirstOrder(DataBase* order);
+    void acceptOrder(DataBase* order);
 };
 
 

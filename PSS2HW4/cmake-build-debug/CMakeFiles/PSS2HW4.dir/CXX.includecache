@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/Car.h
+iostream
+-
+string
+-
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/DataBase.h
+string
+-
+vector
+-
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Driver.cpp
+Driver.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Driver.h
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Driver.h
+iostream
+-
+string
+-
+Car/Car.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Car/Car.h
+Status.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Status.h
+DataBase.h
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/DataBase.h
+vector
+-
+
+C:/Users/user/Documents/GitHub/Programming-Software-Systems-2-Introduction-to-Programming-2-/PSS2HW4/Status.h
+

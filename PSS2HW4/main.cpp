@@ -15,6 +15,7 @@ int main() {
     DataBase dataBase;
     DataBase* ptrDatabase = &dataBase;
 
+    Car car;
 
     EconomyCar economyCar1;
     economyCar1.number = "ab000c";
@@ -40,7 +41,7 @@ int main() {
     passengerGateWay.passengerLogIn({"Maxim"});
     driverGateWay.driverLogIn({"Leonid"});
 
-    driverGateWay.getDriver({"Leonid"})->takeComfortCar(comfortCar1);
+    driverGateWay.getDriver({"Leonid"})->takeBusinessCar(businessCar1);
 
     passengerGateWay.getPassenger({"Maxim"})->selectAddressFrom();
     passengerGateWay.getPassenger({"Maxim"})->selectAddressTo();
@@ -60,14 +61,7 @@ int main() {
 
     driverGateWay.getDriver({"Leonid"})->checkAvailableOrders(ptrDatabase);
     driverGateWay.getDriver({"Leonid"})->acceptOrder(ptrDatabase);
-
-
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressFrom();
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressTo();
-    passengerGateWay.getPassenger({"Maxim"})->selectCarType();
-
-    driverGateWay.getDriver({"Leonid"})->checkAvailableOrders(ptrDatabase);
-    driverGateWay.getDriver({"Leonid"})->acceptOrder(ptrDatabase);
+    
 
     return 0;
 }

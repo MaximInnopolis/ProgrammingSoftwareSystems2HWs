@@ -23,7 +23,10 @@ CMakeFiles/PSS2HW4.dir/Car/EconomyCar.cpp.obj: ../Car/EconomyCar.h
 CMakeFiles/PSS2HW4.dir/DataBase.cpp.obj: ../DataBase.cpp
 CMakeFiles/PSS2HW4.dir/DataBase.cpp.obj: ../DataBase.h
 
+CMakeFiles/PSS2HW4.dir/Driver.cpp.obj: ../Car/BusinessCar.h
 CMakeFiles/PSS2HW4.dir/Driver.cpp.obj: ../Car/Car.h
+CMakeFiles/PSS2HW4.dir/Driver.cpp.obj: ../Car/ComfortCar.h
+CMakeFiles/PSS2HW4.dir/Driver.cpp.obj: ../Car/ComfortPlusCar.h
 CMakeFiles/PSS2HW4.dir/Driver.cpp.obj: ../DataBase.h
 CMakeFiles/PSS2HW4.dir/Driver.cpp.obj: ../Driver.cpp
 CMakeFiles/PSS2HW4.dir/Driver.cpp.obj: ../Driver.h

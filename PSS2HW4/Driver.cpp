@@ -1,4 +1,7 @@
 #include "Driver.h"
+#include "Car/ComfortCar.h"
+#include "Car/ComfortPlusCar.h"
+#include "Car/BusinessCar.h"
 
 void Driver::updateStatus(Status s) {
     status = s;
@@ -80,5 +83,17 @@ void Driver::acceptOrder(DataBase* order) {
         order->to.erase(order->to.begin() + it);
         order->from.erase(order->from.begin() + it);
         order->carType.erase(order->carType.begin() + it);
+        if (car.carType == "Comfort"){
+            ComfortCar* comfortCar = new ComfortCar(car);
+            comfortCar->decreaseFreeBottleOfwater();
+        }
+        if (car.carType == "ComfortPlus"){
+            ComfortPlusCar* comfortPlusCar = new ComfortPlusCar(car);
+            comfortPlusCar->decreaseFreeBottleOfwater();
+        }
+        if (car.carType == "Busines"){
+            BusinessCar* businessCar = new BusinessCar(car);
+            businessCar->parkRightInFrontOfTheEntrance();
+        }
     }
 }

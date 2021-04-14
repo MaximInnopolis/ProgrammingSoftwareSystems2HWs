@@ -119,7 +119,7 @@ void Passenger::choosePaymentMethod(string _payment_method) {
 }
 
 void Passenger::orderRide(DataBase* order) {
-    if ((time_of_trip == 0) || (addressFrom == "") || (addressTo == "")){
+    if ((time_of_trip == 0) || (addressFrom == "") || (addressTo == "") || (carType == "")){
         checkTime();
     }
     if ((addressFrom != "") && (addressTo != "")){
@@ -127,7 +127,8 @@ void Passenger::orderRide(DataBase* order) {
         order->from.push_back(addressFrom);
         order->to.push_back(addressTo);
         order->time.push_back(time_of_trip);
-        order_history.push_back("Trip from " + addressFrom + " to " + addressTo + ". Its time is " + to_string(time_of_trip) + " minutes");
+        order->carType.push_back(carType);
+        order_history.push_back("Trip on car of type " + carType + " from "+ addressFrom + " to " + addressTo + ". Its time is " + to_string(time_of_trip) + " minutes");
         addressFrom = "";
         addressTo = "";
         time_of_trip = 0;

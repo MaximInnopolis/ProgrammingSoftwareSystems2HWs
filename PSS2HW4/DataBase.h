@@ -10,6 +10,7 @@ public:
     vector<string> from;
     vector<string> to;
     vector<int> time;
+    vector<string> carType;
 };
 
 

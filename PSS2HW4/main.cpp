@@ -37,37 +37,37 @@ int main() {
     businessCar1.model = "Lada";
 
 
-    passengerGateWay.passengerLogIn({"Maxim"});
-    driverGateWay.driverLogIn({"Leonid"});
+    passengerGateWay.passengerLogIn(Passenger("Maxim"));
+    driverGateWay.driverLogIn(Driver("Leonid"));
 
-    driverGateWay.getDriver({"Leonid"})->takeComfortCar(comfortCar1);
+    driverGateWay.getDriver("Leonid")->takeComfortCar(comfortCar1);
 
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressFrom();
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressTo();
-    passengerGateWay.getPassenger({"Maxim"})->selectCarType();
-    passengerGateWay.getPassenger({"Maxim"})->checkTime();
-    passengerGateWay.getPassenger({"Maxim"})->checkPrice();
-    passengerGateWay.getPassenger({"Maxim"})->checkLength();
-    passengerGateWay.getPassenger({"Maxim"})->orderRide(ptrDatabase);
-    passengerGateWay.getPassenger({"Maxim"})->addPaymentMethod("Cache");
-    passengerGateWay.getPassenger({"Maxim"})->addPaymentMethod("Card");
-    passengerGateWay.getPassenger({"Maxim"})->addPinnedAddresses("Universitetskay");
-    passengerGateWay.getPassenger({"Maxim"})->addPinnedAddresses("Ploshad");
+    passengerGateWay.getPassenger("Maxim")->selectAddressFrom();
+    passengerGateWay.getPassenger("Maxim")->selectAddressTo();
+    passengerGateWay.getPassenger("Maxim")->selectCarType();
+    passengerGateWay.getPassenger("Maxim")->checkTime();
+    passengerGateWay.getPassenger("Maxim")->checkPrice();
+    passengerGateWay.getPassenger("Maxim")->checkLength();
+    passengerGateWay.getPassenger("Maxim")->orderRide(ptrDatabase);
+    passengerGateWay.getPassenger("Maxim")->addPaymentMethod("Cache");
+    passengerGateWay.getPassenger("Maxim")->addPaymentMethod("Card");
+    passengerGateWay.getPassenger("Maxim")->addPinnedAddresses("Universitetskay");
+    passengerGateWay.getPassenger("Maxim")->addPinnedAddresses("Ploshad");
 
 
     cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 
 
-    driverGateWay.getDriver({"Leonid"})->checkAvailableOrders(ptrDatabase);
-    driverGateWay.getDriver({"Leonid"})->acceptOrder(ptrDatabase);
+    driverGateWay.getDriver("Leonid")->checkAvailableOrders(ptrDatabase);
+    driverGateWay.getDriver("Leonid")->acceptOrder(ptrDatabase);
 
 
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressFrom();
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressTo();
-    passengerGateWay.getPassenger({"Maxim"})->selectCarType();
+    passengerGateWay.getPassenger("Maxim")->selectAddressFrom();
+    passengerGateWay.getPassenger("Maxim")->selectAddressTo();
+    passengerGateWay.getPassenger("Maxim")->selectCarType();
 
-    driverGateWay.getDriver({"Leonid"})->checkAvailableOrders(ptrDatabase);
-    driverGateWay.getDriver({"Leonid"})->acceptOrder(ptrDatabase);
+    driverGateWay.getDriver("Leonid")->checkAvailableOrders(ptrDatabase);
+    driverGateWay.getDriver("Leonid")->acceptOrder(ptrDatabase);
 
     return 0;
 }

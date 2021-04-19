@@ -10,7 +10,7 @@ using namespace std;
 
 class Passenger{
 public:
-    Passenger(string _name){name = _name;}
+    explicit Passenger(string _name){name = _name;}
     string getName(){return name;}
     string name;
     int rating;

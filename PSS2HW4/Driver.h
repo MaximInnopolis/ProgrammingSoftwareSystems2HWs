@@ -13,7 +13,7 @@ using namespace std;
 
 class Driver {
 public:
-    Driver(string _name){name = _name;}
+    explicit Driver(string _name){name = _name;}
     string getName(){return name;}
     string name;
     int rating;

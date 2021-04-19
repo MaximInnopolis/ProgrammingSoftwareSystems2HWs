@@ -8,11 +8,11 @@
  
  So, first you want to create a system, database, passenger gateway, driver gateway, drivers, and passengers:
  
-  System system;
-  PassengerGateWay passengerGateWay(&system);
-  DriverGateWay driverGateWay(&system);
-  DataBase dataBase;
-  DataBase* ptrDatabase = &dataBase;
+   System system;
+   PassengerGateWay passengerGateWay(&system);
+   DriverGateWay driverGateWay(&system);
+   DataBase dataBase;
+   DataBase* ptrDatabase = &dataBase;
   
 As you may see I created a pointer to database in order to use vectors in this class  
     

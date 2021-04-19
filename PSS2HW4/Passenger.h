@@ -9,40 +9,43 @@
 using namespace std;
 
 class Passenger{
-public:
-    Passenger(string _name){name = _name;}
-    string getName(){return name;}
+protected:
     string name;
-    int rating;
-
+    int rating; // not used
     vector<string> payment_methods;
+    vector<string> pinned_addresses;
+    vector<string> order_history;
+
+    string addressFrom;
+    string addressTo;
+    string carType;
+    string payment_method;
+
+    int time_of_trip;
+    int length_of_trip;
+    int price;
+
+public:
+    explicit Passenger(string _name){name = _name;}
+    string getName(){return name;}
+
     void seePaymentMethods();
     void addPaymentMethod(string payment_method);
     void deletePaymentMethod(string payment_method);
-    vector<string> pinned_addresses;
     void seePinnedAddresses();
     void addPinnedAddresses(string pinned_addresses);
     void deletePinnedAddresses(string pinned_addresses);
-    vector<string> order_history;
     void seeOrderHistory();
 
-    string addressFrom;
     void selectAddressFrom();
-    string addressTo;
     void selectAddressTo();
-    string carType;
     void selectCarType();
-    string payment_method;
     void choosePaymentMethod(string _payment_method);
 
-    int time_of_trip;
     void checkTime();
-    int length_of_trip;
     void checkLength();
-    int price;
     void checkPrice();
 
-    DataBase* dataBase;
     void orderRide(DataBase* order);
 };
 

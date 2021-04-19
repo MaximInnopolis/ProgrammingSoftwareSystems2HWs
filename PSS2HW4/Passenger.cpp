@@ -1,7 +1,7 @@
 #include "Passenger.h"
 
 void Passenger::seePaymentMethods() {
-    for (string pm: payment_methods){
+    for (const string &pm: payment_methods){
         cout << pm << "\n" << endl;
     }
 }
@@ -19,7 +19,7 @@ void Passenger::deletePaymentMethod(string payment_method) {
 }
 
 void Passenger::seePinnedAddresses() {
-    for (string pa: pinned_addresses){
+    for (const string &pa: pinned_addresses){
         cout << pa << "\n" << endl;
     }
 }
@@ -37,7 +37,7 @@ void Passenger::deletePinnedAddresses(string pinned_address) {
 }
 
 void Passenger::seeOrderHistory() {
-    for (string oh: order_history){
+    for (const string &oh: order_history){
         cout << oh << "\n" << endl;
     }
 }
@@ -106,7 +106,7 @@ void Passenger::checkPrice() {
 }
 
 void Passenger::choosePaymentMethod(string _payment_method) {
-    for (int i; i < payment_methods.size(); i++){
+    for (int i = 0; i < payment_methods.size(); i++){
         if (_payment_method == payment_methods[i]){
             payment_method = _payment_method;
         }

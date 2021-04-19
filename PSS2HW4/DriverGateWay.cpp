@@ -10,3 +10,10 @@ Driver *DriverGateWay::getDriver(string name) {
             return d;
     return nullptr;
 }
+
+DriverGateWay::~DriverGateWay()
+{
+    for(const auto& dr: list_of_drivers)
+        delete dr;
+    list_of_drivers.clear();
+}

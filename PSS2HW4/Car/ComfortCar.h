@@ -6,10 +6,7 @@
 
 class ComfortCar : public Car {
 public:
-    ComfortCar() {
-        setCarType("Comfort");
-        freeBottleOfwater = 3;
-    }
+    ComfortCar();
     int freeBottleOfwater;
 };
 

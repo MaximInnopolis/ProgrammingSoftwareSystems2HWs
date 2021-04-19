@@ -8,6 +8,8 @@ class DriverGateWay: public System{
 public:
     void driverLogIn(const Driver& driver);
     Driver* getDriver(string name);
+
+    ~DriverGateWay();
 };
 
 

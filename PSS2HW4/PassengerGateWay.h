@@ -8,6 +8,8 @@ class PassengerGateWay: public System{
 public:
     void passengerLogIn(const Passenger& passenger);
     Passenger* getPassenger(string name);
+
+    ~PassengerGateWay();
 };
 
 

@@ -6,10 +6,7 @@
 
 class BusinessCar : public Car {
 public:
-    BusinessCar() {
-        setCarType("Business");
-        freeBottleOfwater = 10;
-    }
+    BusinessCar();
     int freeBottleOfwater;
     void parkRightInFrontOfTheEntrance();
 };

@@ -14,13 +14,11 @@ using namespace std;
 class Driver {
 protected:
     string name;
-    int rating;
+    int rating; // not used
     Car car;
 
     Status status;
     vector<string> order_history;
-
-    DataBase* dataBase;
 
 public:
     explicit Driver(string _name){name = _name;}

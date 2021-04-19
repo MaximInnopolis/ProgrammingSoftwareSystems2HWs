@@ -11,7 +11,7 @@ using namespace std;
 class Passenger{
 protected:
     string name;
-    int rating;
+    int rating; // not used
     vector<string> payment_methods;
     vector<string> pinned_addresses;
     vector<string> order_history;
@@ -24,8 +24,6 @@ protected:
     int time_of_trip;
     int length_of_trip;
     int price;
-
-    DataBase* dataBase;
 
 public:
     explicit Passenger(string _name){name = _name;}

@@ -10,7 +10,7 @@ public:
         setCarType("ComfortPlus");
         freeBottleOfwater = 5;
     }
-    ComfortPlusCar(const Car& car) : Car(car) {};
+    explicit ComfortPlusCar(const Car& car) : Car(car) {};
     int freeBottleOfwater;
     void decreaseFreeBottleOfwater();
     void restoreFreeBottleOfwater();

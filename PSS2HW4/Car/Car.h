@@ -12,7 +12,7 @@ public:
     string model;
     string color;
     string carType;
-    void setCarType(string car_type);
+    void setCarType(const string &car_type);
     virtual ~Car() = default;
 };
 

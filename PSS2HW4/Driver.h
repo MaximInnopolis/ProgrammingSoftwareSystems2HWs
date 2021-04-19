@@ -12,28 +12,29 @@
 using namespace std;
 
 class Driver {
-public:
-    Driver(string _name){name = _name;}
-    string getName(){return name;}
+private:
     string name;
     int rating;
     Car car;
-    void takeEconomyCar(const Car& economy_car);
-    void seeEconomyCar(const Car& economy_car);
-    void takeComfortPlusCar(const Car& comfortplus_car);
-    void seeComfortPlusCar(const Car& comfortplus_car);
-    void takeComfortCar(const Car& comfort_car);
-    void seeComfortCar(const Car& comfort_car);
-    void takeBusinessCar(const Car& business_car);
-    void seeBusinessCar(const Car& business_car);
-
     Status status;
     vector<string> order_history;
+public:
+    explicit  Driver(string name):name(name){}
+    string getName() const {return name;}
+    void takeEconomyCar(const Car& economy_car);
+    static void seeEconomyCar(const Car& economy_car);
+    void takeComfortPlusCar(const Car& comfortplus_car);
+    static void seeComfortPlusCar(const Car& comfortplus_car);
+    void takeComfortCar(const Car& comfort_car);
+    static void seeComfortCar(const Car& comfort_car);
+    void takeBusinessCar(const Car& business_car);
+    static void seeBusinessCar(const Car& business_car);
+
+
     void seeOrderHistory();
     void updateStatus(Status s);
 
-    DataBase* dataBase;
-    void checkAvailableOrders(DataBase* order);
+    void checkAvailableOrders(DataBase* order) const;
     void acceptOrder(DataBase* order);
 };
 

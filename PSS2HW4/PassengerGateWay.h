@@ -4,10 +4,14 @@
 
 #include "System.h"
 
-class PassengerGateWay: public System{
+class PassengerGateWay{
+private:
+    System* system;
 public:
+    explicit PassengerGateWay(System *system);
+
     void passengerLogIn(const Passenger& passenger);
-    Passenger* getPassenger(string name);
+    Passenger* getPassenger(const string &name);
 };
 
 

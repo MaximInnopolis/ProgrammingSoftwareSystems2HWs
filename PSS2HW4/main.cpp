@@ -8,10 +8,10 @@
 #include "Car/ComfortCar.h"
 
 int main() {
-    System system1;
-    cout << system1.name <<'\n' << endl;
-    PassengerGateWay passengerGateWay;
-    DriverGateWay driverGateWay;
+    System system;
+    cout << system.name <<'\n' << endl;
+    PassengerGateWay passengerGateWay(&system);
+    DriverGateWay driverGateWay(&system);
     DataBase dataBase;
     DataBase* ptrDatabase = &dataBase;
 
@@ -37,30 +37,29 @@ int main() {
     businessCar1.color = "green";
     businessCar1.model = "Lada";
 
+    passengerGateWay.passengerLogIn(Passenger("Maxim"));
+    driverGateWay.driverLogIn(Driver("Leonid"));
 
-    passengerGateWay.passengerLogIn({"Maxim"});
-    driverGateWay.driverLogIn({"Leonid"});
+    driverGateWay.getDriver("Leonid")->takeBusinessCar(businessCar1);
 
-    driverGateWay.getDriver({"Leonid"})->takeBusinessCar(businessCar1);
-
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressFrom();
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressTo();
-    passengerGateWay.getPassenger({"Maxim"})->selectCarType();
-    passengerGateWay.getPassenger({"Maxim"})->checkTime();
-    passengerGateWay.getPassenger({"Maxim"})->checkPrice();
-    passengerGateWay.getPassenger({"Maxim"})->checkLength();
-    passengerGateWay.getPassenger({"Maxim"})->orderRide(ptrDatabase);
-    passengerGateWay.getPassenger({"Maxim"})->addPaymentMethod("Cache");
-    passengerGateWay.getPassenger({"Maxim"})->addPaymentMethod("Card");
-    passengerGateWay.getPassenger({"Maxim"})->addPinnedAddresses("Universitetskay");
-    passengerGateWay.getPassenger({"Maxim"})->addPinnedAddresses("Ploshad");
+    passengerGateWay.getPassenger("Maxim")->selectAddressFrom();
+    passengerGateWay.getPassenger("Maxim")->selectAddressTo();
+    passengerGateWay.getPassenger("Maxim")->selectCarType();
+    passengerGateWay.getPassenger("Maxim")->checkTime();
+    passengerGateWay.getPassenger("Maxim")->checkPrice();
+    passengerGateWay.getPassenger("Maxim")->checkLength();
+    passengerGateWay.getPassenger("Maxim")->orderRide(ptrDatabase);
+    passengerGateWay.getPassenger("Maxim")->addPaymentMethod("Cache");
+    passengerGateWay.getPassenger("Maxim")->addPaymentMethod("Card");
+    passengerGateWay.getPassenger("Maxim")->addPinnedAddresses("Universitetskay");
+    passengerGateWay.getPassenger("Maxim")->addPinnedAddresses("Ploshad");
 
 
     cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
 
 
-    driverGateWay.getDriver({"Leonid"})->checkAvailableOrders(ptrDatabase);
-    driverGateWay.getDriver({"Leonid"})->acceptOrder(ptrDatabase);
+    driverGateWay.getDriver("Leonid")->checkAvailableOrders(ptrDatabase);
+    driverGateWay.getDriver("Leonid")->acceptOrder(ptrDatabase);
     
 
     return 0;

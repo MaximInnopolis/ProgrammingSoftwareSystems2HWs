@@ -4,10 +4,14 @@
 
 #include "System.h"
 
-class DriverGateWay: public System{
+class DriverGateWay{
+private:
+    System* system;
 public:
+    explicit DriverGateWay(System *system);
+
     void driverLogIn(const Driver& driver);
-    Driver* getDriver(string name);
+    Driver* getDriver(const string &name);
 };
 
 

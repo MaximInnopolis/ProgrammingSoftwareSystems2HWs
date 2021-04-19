@@ -1,16 +1,16 @@
 #include "Passenger.h"
 
 void Passenger::seePaymentMethods() {
-    for (string pm: payment_methods){
+    for (const string &pm: payment_methods){
         cout << pm << "\n" << endl;
     }
 }
 
-void Passenger::addPaymentMethod(string payment_method) {
+void Passenger::addPaymentMethod(const string &payment_method) {
     payment_methods.push_back(payment_method);
 }
 
-void Passenger::deletePaymentMethod(string payment_method) {
+void Passenger::deletePaymentMethod(string &payment_method) {
     for (int i = 0; i < payment_methods.size(); i++) {
         if (payment_methods[i] == payment_method) {
             payment_methods.erase(payment_methods.begin() + i);
@@ -19,16 +19,16 @@ void Passenger::deletePaymentMethod(string payment_method) {
 }
 
 void Passenger::seePinnedAddresses() {
-    for (string pa: pinned_addresses){
+    for (const string &pa: pinned_addresses){
         cout << pa << "\n" << endl;
     }
 }
 
-void Passenger::addPinnedAddresses(string pinned_address) {
+void Passenger::addPinnedAddresses(const string &pinned_address) {
     pinned_addresses.push_back(pinned_address);
 }
 
-void Passenger::deletePinnedAddresses(string pinned_address) {
+void Passenger::deletePinnedAddresses(string &pinned_address) {
     for (int i = 0; i < pinned_addresses.size(); i++) {
         if (pinned_addresses[i] == pinned_address) {
             pinned_addresses.erase(pinned_addresses.begin() + i);
@@ -37,7 +37,7 @@ void Passenger::deletePinnedAddresses(string pinned_address) {
 }
 
 void Passenger::seeOrderHistory() {
-    for (string oh: order_history){
+    for (const string &oh: order_history){
         cout << oh << "\n" << endl;
     }
 }
@@ -66,7 +66,7 @@ void Passenger::selectCarType() {
 }
 
 void Passenger::checkTime() {
-    if ((carType != "") && (addressTo != "") && (addressFrom != "")) {
+    if ((!carType.empty()) && (!addressTo.empty()) && (!addressFrom.empty())) {
         if (carType == "Comfort") {
             time_of_trip = 20 + rand() % 10;
         }
@@ -86,7 +86,7 @@ void Passenger::checkTime() {
 }
 
 void Passenger::checkPrice() {
-    if ((carType != "") && (addressTo != "") && (addressFrom != "")) {
+    if ((!carType.empty()) && (!addressTo.empty()) && (!addressFrom.empty())) {
         if (carType == "Comfort") {
             price = 200 + rand() % 50;
         }
@@ -105,8 +105,8 @@ void Passenger::checkPrice() {
     }
 }
 
-void Passenger::choosePaymentMethod(string _payment_method) {
-    for (int i; i < payment_methods.size(); i++){
+void Passenger::choosePaymentMethod(string &_payment_method) {
+    for (int i = 0; i < payment_methods.size(); i++){
         if (_payment_method == payment_methods[i]){
             payment_method = _payment_method;
         }
@@ -119,10 +119,10 @@ void Passenger::choosePaymentMethod(string _payment_method) {
 }
 
 void Passenger::orderRide(DataBase* order) {
-    if ((time_of_trip == 0) || (addressFrom == "") || (addressTo == "") || (carType == "")){
+    if ((time_of_trip == 0) || (addressFrom.empty()) || (addressTo.empty()) || (carType.empty())){
         checkTime();
     }
-    if ((addressFrom != "") && (addressTo != "")){
+    if ((!addressFrom.empty()) && (!addressTo.empty())){
         cout << name <<" have ordered the ride from " << addressFrom << " to " << addressTo << "\n" << endl;
         order->from.push_back(addressFrom);
         order->to.push_back(addressTo);
@@ -139,7 +139,7 @@ void Passenger::orderRide(DataBase* order) {
 }
 
 void Passenger::checkLength() {
-    if ((carType != "") && (addressTo != "") && (addressFrom != "") && (time_of_trip != 0)) {
+    if ((!carType.empty()) && (!addressTo.empty()) && (!addressFrom.empty()) && (time_of_trip != 0)) {
         if (carType == "Comfort") {
             length_of_trip = 30 * time_of_trip/60;
         }

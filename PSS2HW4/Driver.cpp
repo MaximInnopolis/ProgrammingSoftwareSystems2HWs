@@ -8,7 +8,7 @@ void Driver::updateStatus(Status s) {
 }
 
 void Driver::seeOrderHistory() {
-    for (string oh: order_history){
+    for (const string &oh: order_history){
         cout << oh << "\n" << endl;
     }
 }
@@ -49,11 +49,11 @@ void Driver::seeBusinessCar(const Car &business_car) {
     cout << "Car has number: " << business_car.number << ", its color is: " << business_car.color << ", its model is: " << business_car.model << ", its type is: "<< business_car.carType << "\n" << endl;
 }
 
-void Driver::checkAvailableOrders(DataBase* order) {
-    bool flag = 0;
+void Driver::checkAvailableOrders(DataBase* order) const {
+    bool flag = false;
     for (int i = 0; i < order->carType.size(); i++){
         if (order->carType[i] == car.carType){
-            flag = 1;
+            flag = true;
             break;
         }
     }
@@ -66,7 +66,7 @@ void Driver::checkAvailableOrders(DataBase* order) {
 
 void Driver::acceptOrder(DataBase* order) {
     string tmp_type;
-    int it;
+    int it = 0;
     for (int i = 0; i < order->carType.size(); i++){
         if (order->carType[i] == car.carType){
             tmp_type = order->carType[i];
@@ -74,7 +74,7 @@ void Driver::acceptOrder(DataBase* order) {
             break;
         }
     }
-    if ((order->carType.empty()) || (tmp_type == "")){
+    if ((order->carType.empty()) || (tmp_type.empty())){
         cout << "There are no available order to accept or car type of these orders does not match to car type of driver " << name << "\n" << endl;
     } else {
         order_history.push_back("Trip on car of type " + car.carType + " from "+ order->from[it] + " to " + order->to[it] + ". Its time is " + to_string(order->time[it]) + " minutes");
@@ -84,15 +84,15 @@ void Driver::acceptOrder(DataBase* order) {
         order->from.erase(order->from.begin() + it);
         order->carType.erase(order->carType.begin() + it);
         if (car.carType == "Comfort"){
-            ComfortCar* comfortCar = new ComfortCar(car);
+            auto* comfortCar = new ComfortCar(car);
             comfortCar->decreaseFreeBottleOfwater();
         }
         if (car.carType == "ComfortPlus"){
-            ComfortPlusCar* comfortPlusCar = new ComfortPlusCar(car);
+            auto* comfortPlusCar = new ComfortPlusCar(car);
             comfortPlusCar->decreaseFreeBottleOfwater();
         }
         if (car.carType == "Busines"){
-            BusinessCar* businessCar = new BusinessCar(car);
+            auto* businessCar = new BusinessCar(car);
             businessCar->parkRightInFrontOfTheEntrance();
         }
     }

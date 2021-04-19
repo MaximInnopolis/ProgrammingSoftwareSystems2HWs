@@ -9,40 +9,43 @@
 using namespace std;
 
 class Passenger{
-public:
-    Passenger(string _name){name = _name;}
-    string getName(){return name;}
+private:
+
     string name;
     int rating;
-
     vector<string> payment_methods;
-    void seePaymentMethods();
-    void addPaymentMethod(string payment_method);
-    void deletePaymentMethod(string payment_method);
     vector<string> pinned_addresses;
-    void seePinnedAddresses();
-    void addPinnedAddresses(string pinned_addresses);
-    void deletePinnedAddresses(string pinned_addresses);
     vector<string> order_history;
-    void seeOrderHistory();
-
     string addressFrom;
-    void selectAddressFrom();
     string addressTo;
-    void selectAddressTo();
     string carType;
-    void selectCarType();
     string payment_method;
-    void choosePaymentMethod(string _payment_method);
-
     int time_of_trip;
-    void checkTime();
     int length_of_trip;
-    void checkLength();
     int price;
-    void checkPrice();
-
     DataBase* dataBase;
+public:
+
+    explicit Passenger(string name):name(name){}
+    string getName() {return name;}
+
+    void seePaymentMethods();
+    void addPaymentMethod(const string &payment_method);
+    void deletePaymentMethod(string &payment_method);
+
+    void seePinnedAddresses();
+    void addPinnedAddresses(const string &pinned_addresses);
+    void deletePinnedAddresses(string &pinned_addresses);
+
+    void seeOrderHistory();
+    void selectAddressFrom();
+    void selectAddressTo();
+    void selectCarType();
+
+    void choosePaymentMethod(string &_payment_method);
+    void checkTime();
+    void checkLength();
+    void checkPrice();
     void orderRide(DataBase* order);
 };
 

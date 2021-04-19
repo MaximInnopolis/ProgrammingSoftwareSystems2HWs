@@ -1,12 +1,14 @@
 #include "PassengerGateWay.h"
 
 void PassengerGateWay::passengerLogIn(const Passenger &passenger) {
-    list_of_passengers.push_back(new Passenger(passenger));
+    system->addPassenger(passenger);
 }
 
-Passenger *PassengerGateWay::getPassenger(string name) {
-    for (auto p : list_of_passengers)
+Passenger *PassengerGateWay::getPassenger(const string &name) {
+    for (const auto& p : system->getListOfPassengers())
         if(p->getName() == name)
             return p;
     return nullptr;
 }
+
+PassengerGateWay::PassengerGateWay(System *system) : system(system){}

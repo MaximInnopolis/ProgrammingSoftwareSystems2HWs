@@ -10,7 +10,7 @@ public:
         setCarType("Business");
         freeBottleOfwater = 10;
     }
-    BusinessCar(const Car& car) : Car(car) {};
+    explicit BusinessCar(const Car& car) : Car(car) {};
     int freeBottleOfwater;
     void parkRightInFrontOfTheEntrance();
 };

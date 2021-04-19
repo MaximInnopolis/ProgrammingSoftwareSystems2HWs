@@ -5,7 +5,7 @@ void Driver::updateStatus(Status s) {
 }
 
 void Driver::seeOrderHistory() {
-    for (string oh: order_history){
+    for (const string &oh: order_history){
         cout << oh << "\n" << endl;
     }
 }
@@ -63,7 +63,7 @@ void Driver::checkAvailableOrders(DataBase* order) {
 
 void Driver::acceptOrder(DataBase* order) {
     string tmp_type;
-    int it;
+    int it = 0;
     for (int i = 0; i < order->carType.size(); i++){
         if (order->carType[i] == car.carType){
             tmp_type = order->carType[i];

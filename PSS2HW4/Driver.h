@@ -12,12 +12,19 @@
 using namespace std;
 
 class Driver {
-public:
-    explicit Driver(string _name){name = _name;}
-    string getName(){return name;}
+protected:
     string name;
     int rating;
     Car car;
+
+    Status status;
+    vector<string> order_history;
+
+    DataBase* dataBase;
+
+public:
+    explicit Driver(string _name){name = _name;}
+    string getName(){return name;}
     void takeEconomyCar(const Car& economy_car);
     void seeEconomyCar(const Car& economy_car);
     void takeComfortPlusCar(const Car& comfortplus_car);
@@ -27,12 +34,9 @@ public:
     void takeBusinessCar(const Car& business_car);
     void seeBusinessCar(const Car& business_car);
 
-    Status status;
-    vector<string> order_history;
     void seeOrderHistory();
     void updateStatus(Status s);
 
-    DataBase* dataBase;
     void checkAvailableOrders(DataBase* order);
     void acceptOrder(DataBase* order);
 };

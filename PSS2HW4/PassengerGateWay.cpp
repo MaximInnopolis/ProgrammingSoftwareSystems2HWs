@@ -10,3 +10,10 @@ Passenger *PassengerGateWay::getPassenger(string name) {
             return p;
     return nullptr;
 }
+
+PassengerGateWay::~PassengerGateWay()
+{
+    for(const auto& ps: list_of_passengers)
+        delete ps;
+    list_of_passengers.clear();
+}

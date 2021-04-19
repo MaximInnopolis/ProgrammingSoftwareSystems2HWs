@@ -8,9 +8,9 @@
  
  So, first you want to create a system, database, passenger gateway, driver gateway, drivers, and passengers:
  
-  System system1;
-  PassengerGateWay passengerGateWay;
-  DriverGateWay driverGateWay;
+  System system;
+  PassengerGateWay passengerGateWay(&system);
+  DriverGateWay driverGateWay(&system);
   DataBase dataBase;
   DataBase* ptrDatabase = &dataBase;
   
@@ -18,27 +18,22 @@ As you may see I created a pointer to database in order to use vectors in this c
     
 After that people can be loginned like this:
   
-    passengerGateWay.passengerLogIn({"Maxim"});
-    driverGateWay.driverLogIn({"Leonid"});
-    
-All users can try to open some room. If you want user to try to open some room you can write like this:
-
-    Innopolis.getUser("Maxim")->tryOpenRoom(Innopolis.getRoom(401));
-    Innopolis.getUser("Tormasov")->tryOpenRoom(Innopolis.getRoom(401));
+    passengerGateWay.passengerLogIn(Passenger("Maxim"));
+    driverGateWay.driverLogIn(Driver("Leonid"));
     
 If you want to use method that is special for him you should write like it is shown below like this: 
 
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressFrom();
-    passengerGateWay.getPassenger({"Maxim"})->selectAddressTo();
-    passengerGateWay.getPassenger({"Maxim"})->selectCarType();
-    passengerGateWay.getPassenger({"Maxim"})->checkTime();
-    passengerGateWay.getPassenger({"Maxim"})->checkPrice();
-    passengerGateWay.getPassenger({"Maxim"})->checkLength();
-    passengerGateWay.getPassenger({"Maxim"})->orderRide(ptrDatabase);
-    passengerGateWay.getPassenger({"Maxim"})->addPaymentMethod("Cache");
-    passengerGateWay.getPassenger({"Maxim"})->addPaymentMethod("Card");
-    passengerGateWay.getPassenger({"Maxim"})->addPinnedAddresses("Universitetskay");
-    passengerGateWay.getPassenger({"Maxim"})->addPinnedAddresses("Ploshad");
+    passengerGateWay.getPassenger("Maxim")->selectAddressFrom();
+    passengerGateWay.getPassenger("Maxim")->selectAddressTo();
+    passengerGateWay.getPassenger("Maxim")->selectCarType();
+    passengerGateWay.getPassenger("Maxim")->checkTime();
+    passengerGateWay.getPassenger("Maxim")->checkPrice();
+    passengerGateWay.getPassenger("Maxim")->checkLength();
+    passengerGateWay.getPassenger("Maxim")->orderRide(ptrDatabase);
+    passengerGateWay.getPassenger("Maxim")->addPaymentMethod("Cache");
+    passengerGateWay.getPassenger("Maxim")->addPaymentMethod("Card");
+    passengerGateWay.getPassenger("Maxim")->addPinnedAddresses("Universitetskay");
+    passengerGateWay.getPassenger("Maxim")->addPinnedAddresses("Ploshad");
 
 I tried to show every method that was required so it should not be complicated
 

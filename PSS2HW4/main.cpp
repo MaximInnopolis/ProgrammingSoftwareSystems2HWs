@@ -8,8 +8,8 @@
 #include "Car/ComfortCar.h"
 
 int main() {
-    System system1;
-    cout << system1.name <<'\n' << endl;
+    System system1; // Incorrect using of class
+    cout << system1.name <<'\n' << endl; //system1 is only used to store a constant string.
     PassengerGateWay passengerGateWay;
     DriverGateWay driverGateWay;
     DataBase dataBase;

@@ -2,7 +2,7 @@
 #define PSS2HW4_STATUS_H
 
 
-enum Status {
+enum Status {// the difference between working and riding is unclear.
     NOT_WORKING = 0,
     RIDING = 0,
     WORKING = 1,

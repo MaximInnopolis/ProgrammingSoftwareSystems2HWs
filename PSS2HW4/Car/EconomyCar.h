@@ -6,9 +6,7 @@
 
 class EconomyCar : public Car {
 public:
-    EconomyCar() {
-        setCarType("Economy");
-    }
+    EconomyCar();
 };
 
 

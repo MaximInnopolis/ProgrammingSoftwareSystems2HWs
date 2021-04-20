@@ -1,7 +1,7 @@
 #include <iostream>
 #include "System.h"
-#include "PassengerGateWay.h"
-#include "DriverGateWay.h"
+#include "Passenger/PassengerGateWay.h"
+#include "Driver/DriverGateWay.h"
 #include "Car/EconomyCar.h"
 #include "Car/BusinessCar.h"
 #include "Car/ComfortPlusCar.h"
@@ -42,6 +42,7 @@ int main() {
 
     driverGateWay.getDriver("Leonid")->takeBusinessCar(businessCar1);
 
+
     passengerGateWay.getPassenger("Maxim")->selectAddressFrom();
     passengerGateWay.getPassenger("Maxim")->selectAddressTo();
     passengerGateWay.getPassenger("Maxim")->selectCarType();
@@ -53,10 +54,12 @@ int main() {
     passengerGateWay.getPassenger("Maxim")->addPaymentMethod("Card");
     passengerGateWay.getPassenger("Maxim")->addPinnedAddresses("Universitetskay");
     passengerGateWay.getPassenger("Maxim")->addPinnedAddresses("Ploshad");
-    
+
 
     driverGateWay.getDriver("Leonid")->checkAvailableOrders(ptrDatabase);
     driverGateWay.getDriver("Leonid")->acceptOrder(ptrDatabase);
+
+    cout << businessCar1.freeBottleOfwater;
 
 
     return 0;

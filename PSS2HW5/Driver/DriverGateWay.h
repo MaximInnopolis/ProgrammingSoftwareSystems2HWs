@@ -1,7 +1,7 @@
 #ifndef PSS2HW5_DRIVERGATEWAY_H
 #define PSS2HW5_DRIVERGATEWAY_H
 
-#include "System.h"
+#include "../System.h"
 
 class DriverGateWay{
 private:

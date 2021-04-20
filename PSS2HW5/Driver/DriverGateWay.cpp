@@ -5,9 +5,9 @@ void DriverGateWay::driverLogIn(const Driver &driver) {
 }
 
 Driver *DriverGateWay::getDriver(const string &name) {
-    for (const auto &d: system->getListOfDrivers())
-        if(d->getName() == name)
-            return d;
+    for (const auto &a: system->getListOfDrivers())
+        if(a->getName() == name)
+            return a;
     return nullptr;
 }
 DriverGateWay::DriverGateWay(System *system) : system(system) {}

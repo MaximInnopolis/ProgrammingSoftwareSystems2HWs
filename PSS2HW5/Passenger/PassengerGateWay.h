@@ -1,7 +1,7 @@
 #ifndef PSS2HW5_PASSENGERGATEWAY_H
 #define PSS2HW5_PASSENGERGATEWAY_H
 
-#include "System.h"
+#include "../System.h"
 
 class PassengerGateWay{
 private:

@@ -24,8 +24,17 @@ private:
     bool possibility_to_check_available_orders;
     bool possibility_to_accept_orders;
 public:
-    explicit Driver(string name):name(name),possibility_to_take_car(true),possibility_to_see_car(true){}
+    explicit Driver(string name):name(name),
+    possibility_to_take_car(true),
+    possibility_to_see_car(true),
+    possibility_to_see_order_history(true),
+    possibility_to_update_status(true),
+    possibility_to_check_available_orders(true),
+    possibility_to_accept_orders(true){}
+
     string getName() const {return name;}
+
+    //Setters and Getters
     bool isPossibilityToTakeCar() const;
     void setPossibilityToTakeCar(bool possibilityToTakeCar);
     bool isPossibilityToSeeCar() const;

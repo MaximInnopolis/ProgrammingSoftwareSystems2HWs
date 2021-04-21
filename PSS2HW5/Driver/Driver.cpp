@@ -100,45 +100,58 @@ void Driver::seeBusinessCar() {
 }
 
 void Driver::checkAvailableOrders(DataBase* order) const {
-    bool flag = false;
-    for (int i = 0; i < order->carType.size(); i++){
-        for (auto c : list_of_cars) {
-            if (order->carType[i] == c.carType) {
-                flag = true;
-                break;
+    if (!possibility_to_check_available_orders) throw invalid_argument("There is no possibility to check available orders.\n");
+    else {
+        bool flag = false;
+        for (int i = 0; i < order->carType.size(); i++) {
+            for (auto c : list_of_cars) {
+                if (order->carType[i] == c.carType) {
+                    flag = true;
+                    break;
+                }
             }
         }
-    }
-    if (flag == 0){
-        cout << "There are no available orders or car type of these orders does not match to car type of driver " << name << "\n" << endl;
-    } else {
-        cout << "There is at least 1 available order \n" << endl;
+        if (flag == 0) {
+            cout << "There are no available orders or car type of these orders does not match to car type of driver "
+                 << name << "\n" << endl;
+        } else {
+            cout << "There is at least 1 available order \n" << endl;
+        }
     }
 }
 
 void Driver::acceptOrder(DataBase* order) {
-    string tmp_type;
-    int it = 0;
-    int i_car_in_list = 0;
-    for (int i = 0; i < order->carType.size(); i++){
-        for (int j = 0; j < list_of_cars.size();j++) {
-            if (order->carType[i] == list_of_cars[j].carType) {
-                tmp_type = order->carType[i];
-                i_car_in_list = j;
-                it = i;
-                break;
+    if (!possibility_to_accept_orders) throw invalid_argument("There is no possibility to accept orders.\n");
+    else {
+        string tmp_type;
+        int it = 0;
+        int i_car_in_list = 0;
+        for (int i = 0; i < order->carType.size(); i++) {
+            for (int j = 0; j < list_of_cars.size(); j++) {
+                if (order->carType[i] == list_of_cars[j].carType) {
+                    tmp_type = order->carType[i];
+                    i_car_in_list = j;
+                    it = i;
+                    break;
+                }
             }
         }
-    }
-    if ((order->carType.empty()) || (tmp_type.empty())){
-        cout << "There are no available order to accept or car type of these orders does not match to car type of driver " << name << "\n" << endl;
-    } else {
-        order_history.push_back("Trip on car of type " + list_of_cars[i_car_in_list].carType + " from "+ order->from[it] + " to " + order->to[it] + ". Its time is " + to_string(order->time[it]) + " minutes");
-        cout << name << " accepted order on car of type " << list_of_cars[i_car_in_list].carType << " from " << order->from[it] << " to " << order->to[it] << ". Its time is " << to_string(order->time[it]) << " minutes\n" << endl;
-        order->time.erase(order->time.begin() + it);
-        order->to.erase(order->to.begin() + it);
-        order->from.erase(order->from.begin() + it);
-        order->carType.erase(order->carType.begin() + it);
+        if ((order->carType.empty()) || (tmp_type.empty())) {
+            cout
+                    << "There are no available order to accept or car type of these orders does not match to car type of driver "
+                    << name << "\n" << endl;
+        } else {
+            order_history.push_back(
+                    "Trip on car of type " + list_of_cars[i_car_in_list].carType + " from " + order->from[it] + " to " +
+                    order->to[it] + ". Its time is " + to_string(order->time[it]) + " minutes");
+            cout << name << " accepted order on car of type " << list_of_cars[i_car_in_list].carType << " from "
+                 << order->from[it] << " to " << order->to[it] << ". Its time is " << to_string(order->time[it])
+                 << " minutes\n" << endl;
+            order->time.erase(order->time.begin() + it);
+            order->to.erase(order->to.begin() + it);
+            order->from.erase(order->from.begin() + it);
+            order->carType.erase(order->carType.begin() + it);
+        }
     }
 }
 

@@ -24,10 +24,64 @@ private:
     int length_of_trip;
     int price;
     DataBase* dataBase;
+
+    bool Possibility_to_seePaymentMethods;
+    bool Possibility_to_addPaymentMethod;
+    bool Possibility_to_deletePaymentMethod;
+    bool Possibility_to_seePinnedAddresses;
+    bool Possibility_to_addPinnedAddresses;
+    bool Possibility_to_deletePinnedAddresses;
+    bool Possibility_to_seeOrderHistory;
+    bool Possibility_to_selectAnything;
+    bool Possibility_to_checkAnything;
+    bool Possibility_to_orderRide;
+    bool Possibility_to_choosePaymentMethod;
+
 public:
 
-    explicit Passenger(string name):name(name){}
+
+
+
+public:
+
+    explicit Passenger(string name):name(name),
+    Possibility_to_seePaymentMethods(true),
+    Possibility_to_addPaymentMethod(true),
+    Possibility_to_deletePaymentMethod(true),
+    Possibility_to_seePinnedAddresses(true),
+    Possibility_to_addPinnedAddresses(true),
+    Possibility_to_deletePinnedAddresses(true),
+    Possibility_to_seeOrderHistory(true),
+    Possibility_to_selectAnything(true),
+    Possibility_to_checkAnything(true),
+    Possibility_to_orderRide(true),
+    Possibility_to_choosePaymentMethod(true) {}
+
     string getName() {return name;}
+
+    //Setters and Getters
+    bool isPossibilityToSeePaymentMethods() const;
+    void setPossibilityToSeePaymentMethods(bool possibilityToSeePaymentMethods);
+    bool isPossibilityToAddPaymentMethod() const;
+    void setPossibilityToAddPaymentMethod(bool possibilityToAddPaymentMethod);
+    bool isPossibilityToDeletePaymentMethod() const;
+    void setPossibilityToDeletePaymentMethod(bool possibilityToDeletePaymentMethod);
+    bool isPossibilityToSeePinnedAddresses() const;
+    void setPossibilityToSeePinnedAddresses(bool possibilityToSeePinnedAddresses);
+    bool isPossibilityToAddPinnedAddresses() const;
+    void setPossibilityToAddPinnedAddresses(bool possibilityToAddPinnedAddresses);
+    bool isPossibilityToDeletePinnedAddresses() const;
+    void setPossibilityToDeletePinnedAddresses(bool possibilityToDeletePinnedAddresses);
+    bool isPossibilityToSeeOrderHistory() const;
+    void setPossibilityToSeeOrderHistory(bool possibilityToSeeOrderHistory);
+    bool isPossibilityToSelectAnything() const;
+    void setPossibilityToSelectAnything(bool possibilityToSelectAnything);
+    bool isPossibilityToCheckAnything() const;
+    void setPossibilityToCheckAnything(bool possibilityToCheckAnything);
+    bool isPossibilityToOrderRide() const;
+    void setPossibilityToOrderRide(bool possibilityToOrderRide);
+    bool isPossibilityToChoosePaymentMethod() const;
+    void setPossibilityToChoosePaymentMethod(bool possibilityToChoosePaymentMethod);
 
     void seePaymentMethods();
     void addPaymentMethod(const string &payment_method);

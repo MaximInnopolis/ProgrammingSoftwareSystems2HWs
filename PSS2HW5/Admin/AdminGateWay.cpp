@@ -1,7 +1,5 @@
 #include "AdminGateWay.h"
 
-AdminGateWay::AdminGateWay(System *system) : system(system) {}
-
 void AdminGateWay::adminLogIn(const Admin &admin) {
     system->addAdmin(admin);
 }
@@ -12,3 +10,5 @@ Admin *AdminGateWay::getAdmin(const string &name) {
             return d;
     return nullptr;
 }
+
+AdminGateWay::AdminGateWay(System *system) : system(system) {}

@@ -8,7 +8,7 @@ class AdminGateWay {
 private:
     System *system;
 public:
-    AdminGateWay(System* system);
+    explicit AdminGateWay(System* system);
 
     void adminLogIn(const Admin& admin);
     Admin* getAdmin(const string &name);

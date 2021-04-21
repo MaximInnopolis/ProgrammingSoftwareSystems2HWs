@@ -14,68 +14,89 @@ void Driver::seeOrderHistory() {
 }
 
 void Driver::seeEconomyCar() {
-    bool flag = false;
-    for (auto ec: list_of_cars)
-        if (ec.carType == "Economy") {
-            flag = true;
-            cout << "Car has number: " << ec.number << ", its color is : " << ec.color
-                 << ", its model is: " << ec.model << ", its type is: " << ec.carType << "\n" << endl;
-            break;
-        }
-    if (!flag) cout << "There is no economy car in list of cars\n" << endl;
+    if (!possibility_to_see_car) throw invalid_argument("There is no possibility to see economy car.\n");
+    else {
+        bool flag = false;
+        for (auto ec: list_of_cars)
+            if (ec.carType == "Economy") {
+                flag = true;
+                cout << "Car has number: " << ec.number << ", its color is : " << ec.color
+                     << ", its model is: " << ec.model << ", its type is: " << ec.carType << "\n" << endl;
+                break;
+            }
+        if (!flag) cout << "There is no economy car in list of cars\n" << endl;
+    }
 }
 
 void Driver::takeEconomyCar(const Car &economy_car) {
-    list_of_cars.push_back(economy_car);
-    cout << "Driver " << name << " took car that has number: "  << economy_car.number << ", its color is:" << economy_car.color << ", its model is: " << economy_car.model << ", its type is: "<< economy_car.carType << "\n" << endl;
+    if (!possibility_to_take_car) throw invalid_argument("There is no possibility to take economy car.\n");
+    else
+        list_of_cars.push_back(economy_car);
+        cout << "Driver " << name << " took car that has number: "  << economy_car.number << ", its color is:" << economy_car.color << ", its model is: " << economy_car.model << ", its type is: "<< economy_car.carType << "\n" << endl;
 }
 
 void Driver::takeComfortPlusCar(const Car &comfortplus_car) {
-    list_of_cars.push_back(comfortplus_car);
-    cout << "Driver " << name << " took car that has number: "  << comfortplus_car.number << ", its color is:" << comfortplus_car.color << ", its model is: " << comfortplus_car.model << ", its type is: "<< comfortplus_car.carType << "\n" << endl;
+    if (!possibility_to_take_car) throw invalid_argument("There is no possibility to take comfort plus car.\n");
+    else
+        list_of_cars.push_back(comfortplus_car);
+        cout << "Driver " << name << " took car that has number: "  << comfortplus_car.number << ", its color is:" << comfortplus_car.color << ", its model is: " << comfortplus_car.model << ", its type is: "<< comfortplus_car.carType << "\n" << endl;
 }
 
 void Driver::seeComfortPlusCar() {
-    bool flag = false;
-    for (auto cpc: list_of_cars)
-        if (cpc.carType == "ComfortPlus") {
-            flag = true;
-            cout << "Car has number: " << cpc.number << ", its color is: " << cpc.color << ", its model is: " << cpc.model << ", its type is: "<< cpc.carType << "\n" << endl;
-            break;
-        }
-    if (!flag) cout << "There is no comfort plus car in list of cars\n" << endl;
+    if (!possibility_to_see_car) throw invalid_argument("There is no possibility to see comfort plus car.\n");
+    else {
+        bool flag = false;
+        for (auto cpc: list_of_cars)
+            if (cpc.carType == "ComfortPlus") {
+                flag = true;
+                cout << "Car has number: " << cpc.number << ", its color is: " << cpc.color << ", its model is: "
+                     << cpc.model << ", its type is: " << cpc.carType << "\n" << endl;
+                break;
+            }
+        if (!flag) cout << "There is no comfort plus car in list of cars\n" << endl;
+    }
 }
 
 void Driver::takeComfortCar(const Car &comfort_car) {
+    if (!possibility_to_take_car) throw invalid_argument("There is no possibility to take comfort car.\n");
     list_of_cars.push_back(comfort_car);
     cout << "Driver " << name << " took car that has number: "  << comfort_car.number << ", its color is:" << comfort_car.color << ", its model is: " << comfort_car.model << ", its type is: "<< comfort_car.carType << "\n" << endl;
 }
 
 void Driver::seeComfortCar() {
-    bool flag = false;
-    for (auto cc: list_of_cars)
-        if (cc.carType == "Comfort") {
-            flag = true;
-            cout << "Car has number: " << cc.number << ", its color is: " << cc.color << ", its model is: " << cc.model << ", its type is: "<< cc.carType << "\n" << endl;
-            break;
-        }
-    if (!flag) cout << "There is no comfort car in list of cars\n" << endl;
+    if (!possibility_to_see_car) throw invalid_argument("There is no possibility to see comfort car.\n");
+    else {
+        bool flag = false;
+        for (auto cc: list_of_cars)
+            if (cc.carType == "Comfort") {
+                flag = true;
+                cout << "Car has number: " << cc.number << ", its color is: " << cc.color << ", its model is: "
+                     << cc.model << ", its type is: " << cc.carType << "\n" << endl;
+                break;
+            }
+        if (!flag) cout << "There is no comfort car in list of cars\n" << endl;
+    }
 }
 
 void Driver::takeBusinessCar(const Car &business_car) {
+    if (!possibility_to_take_car) throw invalid_argument("There is no possibility to take business car.\n");
     list_of_cars.push_back(business_car);
     cout << "Driver " << name << " took car that has number: "  << business_car.number << ", its color is:" << business_car.color << ", its model is: " << business_car.model << ", its type is: "<< business_car.carType << "\n" << endl;
 }
 
 void Driver::seeBusinessCar() {
-    bool flag = false;
-    for (auto bc: list_of_cars)
-        if (bc.carType == "Comfort") {
-            flag = true;
-            cout << "Car has number: " << bc.number << ", its color is: " << bc.color << ", its model is: " << bc.model << ", its type is: "<< bc.carType << "\n" << endl;
-            break;
-        }
-    if (!flag) cout << "There is no business car in list of cars\n" << endl;
+    if (!possibility_to_see_car) throw invalid_argument("There is no possibility to see business car.\n");
+    else {
+        bool flag = false;
+        for (auto bc: list_of_cars)
+            if (bc.carType == "Comfort") {
+                flag = true;
+                cout << "Car has number: " << bc.number << ", its color is: " << bc.color << ", its model is: "
+                     << bc.model << ", its type is: " << bc.carType << "\n" << endl;
+                break;
+            }
+        if (!flag) cout << "There is no business car in list of cars\n" << endl;
+    }
 }
 
 void Driver::checkAvailableOrders(DataBase* order) const {
@@ -119,4 +140,52 @@ void Driver::acceptOrder(DataBase* order) {
         order->from.erase(order->from.begin() + it);
         order->carType.erase(order->carType.begin() + it);
     }
+}
+
+void Driver::setPossibilityToTakeCar(bool possibilityToTakeCar) {
+    possibility_to_take_car = possibilityToTakeCar;
+}
+
+bool Driver::isPossibilityToTakeCar() const {
+    return possibility_to_take_car;
+}
+
+bool Driver::isPossibilityToSeeCar() const {
+    return possibility_to_see_car;
+}
+
+void Driver::setPossibilityToSeeCar(bool possibilityToSeeCar) {
+    possibility_to_see_car = possibilityToSeeCar;
+}
+
+bool Driver::isPossibilityToSeeOrderHistory() const {
+    return possibility_to_see_order_history;
+}
+
+void Driver::setPossibilityToSeeOrderHistory(bool possibilityToSeeOrderHistory) {
+    possibility_to_see_order_history = possibilityToSeeOrderHistory;
+}
+
+bool Driver::isPossibilityToUpdateStatus() const {
+    return possibility_to_update_status;
+}
+
+void Driver::setPossibilityToUpdateStatus(bool possibilityToUpdateStatus) {
+    possibility_to_update_status = possibilityToUpdateStatus;
+}
+
+bool Driver::isPossibilityToCheckAvailableOrders() const {
+    return possibility_to_check_available_orders;
+}
+
+void Driver::setPossibilityToCheckAvailableOrders(bool possibilityToCheckAvailableOrders) {
+    possibility_to_check_available_orders = possibilityToCheckAvailableOrders;
+}
+
+bool Driver::isPossibilityToAcceptOrders() const {
+    return possibility_to_accept_orders;
+}
+
+void Driver::setPossibilityToAcceptOrders(bool possibilityToAcceptOrder) {
+    possibility_to_accept_orders = possibilityToAcceptOrder;
 }

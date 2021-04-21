@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "../Driver/Driver.h"
 
 using namespace std;
 
@@ -11,8 +12,13 @@ private:
     string name;
 public:
     const string &getName() const;
-
-public:
+    explicit  Admin(string name):name(name){}
+    void blockPossibilityToTakeCar(Driver* driver);
+    void blockPossibilityToSeeCar(Driver* driver);
+    void blockPosibilityToSeeOrderHistory(Driver* driver);
+    void blockPossibilityToUpdateStatus(Driver* driver);
+    void PossibilityToCheckAvailableOrders(Driver* driver);
+    void PossibilityToAcceptOrders(Driver* driver);
 };
 
 

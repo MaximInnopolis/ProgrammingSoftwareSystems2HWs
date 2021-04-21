@@ -106,8 +106,13 @@ void Driver::checkAvailableOrders(DataBase* order) const {
         for (int i = 0; i < order->carType.size(); i++) {
             for (auto c : list_of_cars) {
                 if (order->carType[i] == c.carType) {
-                    flag = true;
-                    break;
+                    if (c.valid != 0) {
+                        flag = true;
+                        break;
+                    } else {
+                        cout << "Car that has number: " << c.number << ", which color is: " << c.color << ", which model is: "
+                            << c.model << ", which type is: " << c.carType << ", is invalid.\n" << endl;
+                    }
                 }
             }
         }
@@ -201,4 +206,8 @@ bool Driver::isPossibilityToAcceptOrders() const {
 
 void Driver::setPossibilityToAcceptOrders(bool possibilityToAcceptOrder) {
     possibility_to_accept_orders = possibilityToAcceptOrder;
+}
+
+const vector<Car> &Driver::getListOfCars() const {
+    return list_of_cars;
 }

@@ -12,6 +12,10 @@ public:
     string model;
     string color;
     string carType;
+    bool valid;
+
+    void setValid(bool valid);
+
     void setCarType(const string &car_type);
     virtual ~Car() = default;
 };

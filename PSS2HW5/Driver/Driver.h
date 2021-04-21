@@ -15,6 +15,7 @@ private:
     string name;
     int rating;
     vector <Car> list_of_cars;
+private:
     Status status;
     vector<string> order_history;
     bool possibility_to_take_car;
@@ -35,6 +36,8 @@ public:
     string getName() const {return name;}
 
     //Setters and Getters
+    const vector<Car> &getListOfCars() const;
+
     bool isPossibilityToTakeCar() const;
     void setPossibilityToTakeCar(bool possibilityToTakeCar);
     bool isPossibilityToSeeCar() const;

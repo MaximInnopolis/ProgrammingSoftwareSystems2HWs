@@ -83,17 +83,5 @@ void Driver::acceptOrder(DataBase* order) {
         order->to.erase(order->to.begin() + it);
         order->from.erase(order->from.begin() + it);
         order->carType.erase(order->carType.begin() + it);
-        if (car.carType == "Comfort"){
-            auto* comfortCar = new ComfortCar(car);
-            comfortCar->decreaseFreeBottleOfwater();
-        }
-        if (car.carType == "ComfortPlus"){
-            auto* comfortPlusCar = new ComfortPlusCar(car);
-            comfortPlusCar->decreaseFreeBottleOfwater();
-        }
-        if (car.carType == "Busines"){
-            auto* businessCar = new BusinessCar(car);
-            businessCar->parkRightInFrontOfTheEntrance();
-        }
     }
 }
